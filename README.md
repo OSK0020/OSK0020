@@ -12,7 +12,7 @@
 
 <h3 align="center">BIO</h3>
 <p align="center">
-  Full-stack Developer & AI Enthusiast specializing in building intelligent, data-driven systems. Currently focused on the nexus of AI integration and high-performance web architectures.
+  Bot & Web Developer | Exploring new technologies and using AI to enhance my development and personal learning process. 🚀
 </p>
 
 <hr>
