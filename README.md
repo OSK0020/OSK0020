@@ -5,7 +5,6 @@
 
   <h1>⚡ OSK0020 // INTELLIGENCE DASHBOARD ⚡</h1>
   <p>
-    <code>[ OBSERVER SECURITY NETWORK - GLOBAL COMMAND ]</code>
   </p>
 
   <p>
