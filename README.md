@@ -7,19 +7,7 @@
 
   <br/><br/>
 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=9D4EDD&center=true&vCenter=true&width=750&lines=STUDENT+ON+SUMMER+BREAK%2C+BUILDING+FOR+FUN;I+DIRECT%2C+AI+EXECUTES+-+VIBE+CODING+DAILY;APP+HAS+A+LIMIT%3F+I+JUST+REBUILD+IT+MYSELF;SELF-TAUGHT+ACROSS+DOZENS+OF+STACKS" alt="Typing SVG" />
-  </a>
 
-
-
-  <br/><br/>
-
-  <img src="https://komarev.com/ghpvc/?username=OSK0020&label=VISITORS&color=7000ff&style=flat-square" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/OSK0020?label=FOLLOWERS&color=5a189a&style=flat-square" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/OSK0020?label=TOTAL%20STARS&color=3c096c&style=flat-square" alt="Stars" />
-
-  <br/><br/>
 
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=OSK0020&theme=github-dark&mode=light" />
