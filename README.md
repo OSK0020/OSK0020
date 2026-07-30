@@ -90,12 +90,9 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
   <img src="https://skillicons.dev/icons?i=vscode,git,docker,blender,androidstudio,render,vercel" alt="Tools" />
 </p>
 
-### 🤖 AI Tools I Vibe Code With
+### 🤖 AI Tools & Autonomous Workflows
 <p>
-  <img src="https://img.shields.io/badge/Antigravity-4B0082?style=for-the-badge&logo=gemini&logoColor=white" alt="Antigravity" />
-  <img src="https://img.shields.io/badge/Lovable-FF4B11?style=for-the-badge&logo=heart&logoColor=white" alt="Lovable" />
-  <img src="https://img.shields.io/badge/UiPilot-000000?style=for-the-badge&logo=airplane&logoColor=white" alt="UiPilot" />
-  <img src="https://img.shields.io/badge/Pollinations.ai-00f7ff?style=for-the-badge&logo=openai&logoColor=black" alt="Pollinations.ai" />
+  <img src="https://skillicons.dev/icons?i=bots,py,githubactions,workers" alt="AI Tools" />
 </p>
 
 ---
