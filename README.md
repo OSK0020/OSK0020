@@ -188,8 +188,15 @@ open_to:
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&website=t.me/OSN_Reports&github=OSK0020&mode=light" />
-    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&website=t.me/OSN_Reports&github=OSK0020" alt="OSK0020 GitSkins Connect" />
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&email=oristern8@gmail.com&website=t.me/OSN_Reports&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&email=oristern8@gmail.com&website=t.me/OSN_Reports" alt="OSK0020 Email & Telegram" />
+  </picture>
+
+  <br/><br/>
+
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&github=OSK0020&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&github=OSK0020" alt="OSK0020 X & GitHub" />
   </picture>
 
   <br/><br/>
