@@ -228,31 +228,13 @@ open_to:
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&github=OSK0020&mode=light" />
-    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&github=OSK0020" alt="OSK0020 GitSkins Connect" />
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&website=t.me/OSN_Reports&github=OSK0020&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&website=t.me/OSN_Reports&github=OSK0020" alt="OSK0020 GitSkins Connect" />
   </picture>
 
   <br/><br/>
 
   <p><i>Let's build something useful together.</i></p>
-
-  <br/>
-
-  <a href="mailto:oristern8@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-ORISTERN8@GMAIL.COM-3fb950?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://x.com/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/X-@OSN__REPORTS-00f7ff?style=for-the-badge&logo=x&logoColor=black" alt="X" />
-  </a>
-  &nbsp;
-  <a href="https://t.me/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/TELEGRAM-@OSN__REPORTS-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-  </a>
-  <br/><br/>
-  <a href="https://github.com/OSK0020" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB-OSK0020-7000ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
 </div>
 
 ---
