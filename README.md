@@ -191,10 +191,6 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 ## 📈 Live Real GitHub Contribution Heatmap
 
 <div align="center">
-  <img src="https://ghchart.rshah.org/7000ff/OSK0020" alt="OSK0020 Real Contribution Heatmap" width="100%" />
-
-  <br/><br/>
-
   <img src="https://raw.githubusercontent.com/OSK0020/OSK0020/output/github-contribution-grid-snake-dark.svg" alt="OSK0020 Real Contribution Snake Animation" width="100%" />
 
   <br/><br/>
