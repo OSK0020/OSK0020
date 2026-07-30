@@ -1,12 +1,18 @@
-# ⚡ OSK0020 // FULL-STACK & AI ENGINEER
+# ⚡ OSK0020 // FULL-STACK AND AI ENGINEER
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20//%20FULL-STACK%20%26%20AI%20ENGINEER&fontSize=32&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20%7C%7C%20FULL-STACK%20AND%20AI%20ENGINEER&fontSize=30&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
 
-  <br/>
+  <br/><br/>
+
+  <a href="https://www.gitskins.com/showcase/OSK0020?skin=studio" target="_blank">
+    <img src="https://www.gitskins.com/api/premium-card?username=OSK0020&theme=neon&variant=persona" alt="OSK0020 GitSkins Persona Card" />
+  </a>
+
+  <br/><br/>
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=9D4EDD&center=true&vCenter=true&width=750&lines=AUTONOMOUS+AI+AGENTS+%26+FULL-STACK+ENGINEERING;BUILDING+FAANG-GRADE+SCALABLE+WEB+SYSTEMS;INTEGRATING+ANTIGRAVITY%2C+LOVABLE+%26+UIPILOT;EXPLORING+BLEEDING-EDGE+AI+ARCHITECTURE" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=9D4EDD&center=true&vCenter=true&width=750&lines=AUTONOMOUS+AI+AGENTS+AND+FULL-STACK+ENGINEERING;BUILDING+FAANG-GRADE+SCALABLE+WEB+SYSTEMS;INTEGRATING+ANTIGRAVITY%2C+LOVABLE+AND+UIPILOT;EXPLORING+BLEEDING-EDGE+AI+ARCHITECTURE" alt="Typing SVG" />
   </a>
 
   <br/><br/>
@@ -19,14 +25,14 @@
   <a href="https://github.com/OSK0020">
     <img src="https://img.shields.io/badge/PORTFOLIO-LIVE-9d4edd?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
-  <a href="https://x.com/OSN_Reports">
-    <img src="https://img.shields.io/badge/X%20%2F%20TWITTER-@OSN__Reports-1d9bf0?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  <a href="https://x.com/OSN_Reports" target="_blank">
+    <img src="https://img.shields.io/badge/X%20(TWITTER)-@OSN__Reports-1d9bf0?style=for-the-badge&logo=x&logoColor=white" alt="X" />
   </a>
-  <a href="https://t.me/OSN_Reports">
+  <a href="https://t.me/OSN_Reports" target="_blank">
     <img src="https://img.shields.io/badge/TELEGRAM-COMMUNITY-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
   <a href="mailto:oristern8@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-DIRECT%20UPLINK-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/EMAIL-oristern8@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 
   <br/><br/>
@@ -254,18 +260,25 @@ High-performance React web platform powering image lab benchmark visualizations 
 
 ---
 
-## 📊 GitHub Analytics
+## 📊 GitHub Analytics & Contribution Signal
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark&mode=light" />
     <img src="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stats" />
   </picture>
+
+  <br/><br/>
+
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/contributions?username=OSK0020&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/contributions?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Contribution Signal Grid" />
+  </picture>
 </div>
 
 ---
 
-## 📈 Contribution Activity
+## 📈 Contribution Activity Graph
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="Activity Graph" />
@@ -295,8 +308,8 @@ open_to:
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&mode=light" />
-    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports" alt="OSK0020 GitSkins Connect" />
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&gmail=oristern8@gmail.com&telegram=OSN_Reports&github=OSK0020&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&gmail=oristern8@gmail.com&telegram=OSN_Reports&github=OSK0020" alt="OSK0020 GitSkins Connect" />
   </picture>
 
   <br/><br/>
