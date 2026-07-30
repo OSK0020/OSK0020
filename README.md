@@ -1,7 +1,7 @@
 # ⚡ OSK0020 // STUDENT & AI-POWERED BUILDER
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20%7C%7C%20STUDENT%20%26%20AI-POWERED%20BUILDER&fontSize=28&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20%7C%7C%20STUDENT%20AND%20AI-POWERED%20BUILDER&fontSize=28&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
 
 
 
