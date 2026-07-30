@@ -175,13 +175,29 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ---
 
-## 📊 GitHub Analytics
+## 🏆 GitHub Profile Trophies
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" target="_blank">
+    <img src="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=onedark&column=4" alt="GitHub Profile Trophy" />
+  </a>
+</div>
+
+---
+
+## 📊 GitHub Analytics & Streak Stats
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark&mode=light" />
     <img src="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stats" />
   </picture>
+
+  <br/><br/>
+
+  <a href="https://git.io/streak-stats" target="_blank">
+    <img src="https://streak-stats.demolab.com/?user=OSK0020&theme=dark&hide_border=true" alt="GitHub Streak Stats" />
+  </a>
 </div>
 
 ---
