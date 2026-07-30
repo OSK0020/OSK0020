@@ -1,3 +1,5 @@
+# ⚡ OSK0020 // FULL-STACK & AI ENGINEER
+
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20//%20FULL-STACK%20%26%20AI%20ENGINEER&fontSize=32&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
 
@@ -111,7 +113,7 @@ Senior-level Full-Stack Engineer and AI Architect specializing in autonomous age
 <br/>
 
 ### Overview
-A FAANG-grade visual intelligence dashboard and CLI terminal environment designed for modern profile metrics monitoring.
+A FAANG-grade visual intelligence dashboard and CLI terminal environment designed for profile metrics monitoring.
 
 | Aspect | Specification |
 | :--- | :--- |
@@ -172,7 +174,7 @@ Enterprise multi-agent framework orchestrating web browsers, automated test runn
 
 ---
 
-## 🏆 Achievements
+## 🏆 Achievements & Badges
 
 <div align="center">
 
@@ -180,8 +182,16 @@ Enterprise multi-agent framework orchestrating web browsers, automated test runn
 | :--- | :---: | :--- |
 | 🥇 **Top Contributor Award** | Open Source AI Ecosystem | Recognized for high-impact AI agent tooling contributions |
 | 🚀 **FAANG Engineering Standard** | Global Dev Network | Certified for high-performance frontend & system architecture |
-| ⚡ **600+ GitHub Contributions** | GitHub | Sustained active contribution record in 2026 |
+| ⚡ **600+ GitHub Contributions** | GitHub | Sustained active contribution record |
 
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/GitHub-Pull%20Request%20Merger-7000ff?style=for-the-badge&logo=github&logoColor=white" alt="PR Merger" />
+  <img src="https://img.shields.io/badge/AI%20Architect-Master%20Level-00f7ff?style=for-the-badge&logo=openai&logoColor=black" alt="AI Architect" />
+  <img src="https://img.shields.io/badge/Code%20Quality-A%2B-3fb950?style=for-the-badge&logo=sonarcloud&logoColor=white" alt="Code Quality" />
 </div>
 
 ---
@@ -223,23 +233,6 @@ Enterprise multi-agent framework orchestrating web browsers, automated test runn
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark&mode=light" />
     <img src="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stats" />
   </picture>
-
-  <br/><br/>
-
-  <img src="https://github-readme-stats.vercel.app/api?username=OSK0020&show_icons=true&theme=synthwave&hide_border=true&title_color=7000ff&icon_color=00f7ff" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OSK0020&theme=synthwave&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%" />
-
-  <br/><br/>
-
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OSK0020&layout=compact&theme=synthwave&hide_border=true" alt="Top Languages" width="60%" />
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=dracula&margin-w=15&margin-h=15&no-frame=true" alt="GitHub Trophies" />
 </div>
 
 ---
@@ -248,14 +241,6 @@ Enterprise multi-agent framework orchestrating web browsers, automated test runn
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="Activity Graph" />
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/OSK0020/OSK0020/output/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%" />
 </div>
 
 ---
