@@ -266,12 +266,7 @@ console.log(`Fidelity Score: ${result.fidelity}% | Latency: ${result.avgLatencyM
     <img src="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stats" />
   </picture>
 
-  <br/><br/>
 
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/contributions?username=OSK0020&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/contributions?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Contribution Signal Grid" />
-  </picture>
 </div>
 
 ---
