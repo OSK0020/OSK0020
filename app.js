@@ -1,4 +1,7 @@
-# OSK0020
+document.addEventListener('DOMContentLoaded', () => {
+  const copyBtn = document.getElementById('copyMarkdownBtn');
+
+  const markdownContent = `# OSK0020
 
 > Recruiter-friendly proof and contact path.
 
@@ -103,5 +106,25 @@ Connect via social channels and direct uplinks.
     <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
 </div>
+`;
 
-<!-- Sections: Header, About Me, Skills, GitHub Stats, Projects, Connect -->
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(markdownContent);
+        const originalText = copyBtn.innerHTML;
+        copyBtn.innerHTML = '✅ Copied to Clipboard!';
+        copyBtn.style.borderColor = '#3fb950';
+        copyBtn.style.color = '#3fb950';
+
+        setTimeout(() => {
+          copyBtn.innerHTML = originalText;
+          copyBtn.style.borderColor = '';
+          copyBtn.style.color = '';
+        }, 2500);
+      } catch (err) {
+        console.error('Failed to copy text: ', err);
+      }
+    });
+  }
+});
