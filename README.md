@@ -178,34 +178,12 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ---
 
-## 🎵 Spotify // Now Playing & Coding Beats
-
-<div align="center">
-  <a href="https://open.spotify.com" target="_blank">
-    <img src="https://spotify-github-readme.vercel.app/api/spotify?spotify_theme=dark&theme=synthwave&show_user=true" alt="Spotify Now Playing" width="450px" />
-  </a>
-</div>
-
----
-
 ## 📊 GitHub Analytics
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark&mode=light" />
     <img src="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stats" />
-  </picture>
-</div>
-
----
-
-## 🌐 3D Isometric Contribution Globe
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="OSK0020 Contribution Grid" />
   </picture>
 </div>
 
