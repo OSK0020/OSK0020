@@ -236,19 +236,19 @@ open_to:
   <br/>
 
   <a href="mailto:oristern8@gmail.com">
-    <img src="https://img.shields.io/badge/Email-oristern8@gmail.com-3fb950?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/EMAIL-ORISTERN8@GMAIL.COM-3fb950?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   &nbsp;
   <a href="https://x.com/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/X-@OSN__Reports-00f7ff?style=for-the-badge&logo=x&logoColor=black" alt="X" />
+    <img src="https://img.shields.io/badge/X-@OSN__REPORTS-00f7ff?style=for-the-badge&logo=x&logoColor=black" alt="X" />
   </a>
   &nbsp;
   <a href="https://t.me/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/Telegram-@OSN__Reports-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+    <img src="https://img.shields.io/badge/TELEGRAM-@OSN__REPORTS-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
-  &nbsp;
+  <br/><br/>
   <a href="https://github.com/OSK0020" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-OSK0020-7000ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GITHUB-OSK0020-7000ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
 
