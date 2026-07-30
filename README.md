@@ -192,9 +192,17 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 
 ---
 
-## 📈 Contribution Activity Graph
+## 📈 Contribution Activity Graph & Jet Heatmap
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OSK0020/OSK0020/main/dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OSK0020/OSK0020/main/light.svg" />
+    <img alt="GitHub Jet Heatmap" src="https://raw.githubusercontent.com/OSK0020/OSK0020/main/dark.svg" width="100%" />
+  </picture>
+
+  <br/><br/>
+
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="Activity Graph" />
 </div>
 
