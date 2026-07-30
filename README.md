@@ -136,8 +136,8 @@ open_to:
 ## 🎵 Spotify // Live Coding Beats
 
 <div align="center">
-  <a href="https://open.spotify.com" target="_blank">
-    <img src="./spotify-card.svg?v=2" width="100%" alt="Spotify Live Coding Beats" />
+  <a href="https://open.spotify.com/search/Claude%20Code%20Vibe" target="_blank">
+    <img src="./spotify-card.svg?v=3" width="100%" alt="Spotify Live Coding Beats" />
   </a>
 </div>
 
