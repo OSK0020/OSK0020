@@ -175,6 +175,16 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ---
 
+## 🎵 Spotify // Now Playing & Coding Beats
+
+<div align="center">
+  <a href="https://open.spotify.com" target="_blank">
+    <img src="https://spotify-github-readme.vercel.app/api/spotify?spotify_theme=dark&theme=synthwave&show_user=true" alt="Spotify Now Playing" width="450px" />
+  </a>
+</div>
+
+---
+
 ## 📊 GitHub Analytics & Streak Stats
 
 <div align="center">
