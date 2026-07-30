@@ -11,18 +11,7 @@
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=9D4EDD&center=true&vCenter=true&width=750&lines=STUDENT+ON+SUMMER+BREAK%2C+BUILDING+FOR+FUN;I+DIRECT%2C+AI+EXECUTES+-+VIBE+CODING+DAILY;APP+HAS+A+LIMIT%3F+I+JUST+REBUILD+IT+MYSELF;SELF-TAUGHT+ACROSS+DOZENS+OF+STACKS" alt="Typing SVG" />
   </a>
 
-  <br/><br/>
 
-  <a href="https://x.com/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/X%20(TWITTER)-@OSN__Reports-1d9bf0?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-  </a>
-  <a href="https://t.me/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/TELEGRAM-@OSN__Reports-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-  </a>
-  <a href="mailto:oristern8@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-oristern8@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <img src="https://img.shields.io/badge/DISCORD-OSK0020-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
 
   <br/><br/>
 
