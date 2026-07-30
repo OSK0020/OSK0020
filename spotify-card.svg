@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="120" viewBox="0 0 850 120" fill="none">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradient (Claude Warm Crimson & Cyber Dark) -->
     <linearGradient id="spotify-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121212" />
+      <stop offset="0%" stop-color="#1e0e0e" />
       <stop offset="50%" stop-color="#181818" />
       <stop offset="100%" stop-color="#0d1117" />
     </linearGradient>
 
-    <!-- Glowing Spotify Border -->
+    <!-- Glowing Claude & Spotify Border -->
     <linearGradient id="spotify-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#1ed760" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#d95338" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#1DB954" stop-opacity="0.5" />
       <stop offset="100%" stop-color="#7000ff" stop-opacity="0.8" />
     </linearGradient>
 
-    <!-- Album Cover Radial -->
+    <!-- Album Cover Glow -->
     <radialGradient id="album-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#d95338" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#121212" stop-opacity="0" />
     </radialGradient>
   </defs>
@@ -29,7 +29,7 @@
     @keyframes bar-pulse-4 { 0%, 100% { height: 34px; y: 20px; } 50% { height: 10px; y: 44px; } }
     @keyframes bar-pulse-5 { 0%, 100% { height: 20px; y: 34px; } 50% { height: 30px; y: 24px; } }
 
-    .eq-bar { fill: #1DB954; rx: 3px; ry: 3px; }
+    .eq-bar { fill: #d95338; rx: 3px; ry: 3px; }
     .eq-1 { animation: bar-pulse-1 1.2s infinite ease-in-out; }
     .eq-2 { animation: bar-pulse-2 0.9s infinite ease-in-out 0.2s; }
     .eq-3 { animation: bar-pulse-3 1.4s infinite ease-in-out 0.4s; }
@@ -45,13 +45,13 @@
   <rect x="2" y="2" width="846" height="116" rx="18" fill="url(#spotify-bg)" stroke="url(#spotify-border)" stroke-width="1.5"/>
 
   <!-- Spotify Vinyl Record / Album Art Icon -->
-  <a href="https://open.spotify.com" target="_blank">
+  <a href="https://open.spotify.com/search/Claude%20Code%20Vibe" target="_blank">
     <circle cx="60" cy="60" r="42" fill="url(#album-glow)"/>
     <g class="vinyl-spin">
-      <circle cx="60" cy="60" r="34" fill="#040404" stroke="#282828" stroke-width="1.5"/>
-      <circle cx="60" cy="60" r="26" fill="none" stroke="#181818" stroke-width="1"/>
-      <circle cx="60" cy="60" r="18" fill="none" stroke="#222222" stroke-width="1"/>
-      <circle cx="60" cy="60" r="12" fill="#1DB954"/>
+      <circle cx="60" cy="60" r="34" fill="#040404" stroke="#d95338" stroke-width="1.5"/>
+      <circle cx="60" cy="60" r="26" fill="none" stroke="#281414" stroke-width="1"/>
+      <circle cx="60" cy="60" r="18" fill="none" stroke="#3a1c1c" stroke-width="1"/>
+      <circle cx="60" cy="60" r="12" fill="#d95338"/>
       <circle cx="60" cy="60" r="4" fill="#040404"/>
     </g>
 
@@ -65,22 +65,22 @@
   <!-- Track & Artist Info -->
   <g transform="translate(120, 36)">
     <!-- Header Badge -->
-    <rect x="0" y="0" width="115" height="20" rx="10" fill="#1DB954" fill-opacity="0.15" stroke="#1DB954" stroke-opacity="0.4" stroke-width="1"/>
-    <text x="10" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#1DB954" letter-spacing="1">SPOTIFY // LIVE BEATS</text>
+    <rect x="0" y="0" width="155" height="20" rx="10" fill="#d95338" fill-opacity="0.18" stroke="#d95338" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="10" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#e26d5c" letter-spacing="1">SPOTIFY // PUBLIC PLAYLIST</text>
 
-    <!-- Song Title -->
-    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Coding Beats &amp; Cyber Vibe // Focus Mode</text>
+    <!-- Playlist Title -->
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#ffffff">Claude Code Vibe</text>
     
-    <!-- Artist / Description -->
-    <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#b3b3b3">Lo-Fi, Synthwave &amp; Ambient Soundscapes for AI Builders</text>
+    <!-- Playlist Description & Highlights -->
+    <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#b3b3b3">by tezcan00 • Tame Impala, Daft Punk, MoBlack &amp; 90+ Coding Beats</text>
   </g>
 
   <!-- Live Animated Sound Wave Equalizer (Right Side) -->
   <g transform="translate(730, 35)">
     <!-- Sound Waves Container Background -->
-    <rect x="-15" y="-5" width="105" height="60" rx="12" fill="#181818" stroke="#282828" stroke-width="1"/>
+    <rect x="-15" y="-5" width="105" height="60" rx="12" fill="#1c1212" stroke="#3a1e1e" stroke-width="1"/>
     
-    <!-- 5 Animated Equalizer Bars -->
+    <!-- 5 Animated Equalizer Bars (Claude Crimson Gradient) -->
     <rect x="0" y="30" width="6" height="20" class="eq-bar eq-1"/>
     <rect x="14" y="26" width="6" height="28" class="eq-bar eq-2"/>
     <rect x="28" y="18" width="6" height="36" class="eq-bar eq-3"/>
