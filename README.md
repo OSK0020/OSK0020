@@ -15,7 +15,7 @@
 
   <br/><br/>
 
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=OSK0020.OSK0020&left_color=gray&right_color=7000ff" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=OSK0020&label=VISITORS&color=7000ff&style=flat-square" alt="Profile Views" />
   <img src="https://img.shields.io/github/followers/OSK0020?label=FOLLOWERS&color=5a189a&style=flat-square" alt="Followers" />
   <img src="https://img.shields.io/github/stars/OSK0020?label=TOTAL%20STARS&color=3c096c&style=flat-square" alt="Stars" />
 
