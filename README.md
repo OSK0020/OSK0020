@@ -3,11 +3,7 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20%7C%7C%20FULL-STACK%20AND%20AI%20DEVELOPER&fontSize=30&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
 
-  <br/><br/>
 
-  <a href="https://www.gitskins.com/showcase/OSK0020?skin=studio" target="_blank">
-    <img src="https://www.gitskins.com/api/premium-card?username=OSK0020&theme=neon&variant=persona" alt="OSK0020 GitSkins Persona Card" />
-  </a>
 
   <br/><br/>
 
@@ -225,27 +221,34 @@ open_to:
 
 ---
 
-## 📬 Connect & Comms
+## 📬 Connect
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&gmail=oristern8@gmail.com&telegram=OSN_Reports&github=OSK0020&mode=light" />
-    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&gmail=oristern8@gmail.com&telegram=OSN_Reports&github=OSK0020" alt="OSK0020 GitSkins Connect" />
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&website=t.me/OSN_Reports&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&email=oristern8@gmail.com&website=t.me/OSN_Reports" alt="OSK0020 GitSkins Connect" />
   </picture>
 
   <br/><br/>
 
+  <p><i>Let's build something useful together.</i></p>
+
+  <br/>
+
   <a href="mailto:oristern8@gmail.com">
-    <img src="https://img.shields.io/badge/GMAIL-oristern8@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+    <img src="https://img.shields.io/badge/Email-oristern8@gmail.com-3fb950?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
+  &nbsp;
   <a href="https://x.com/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/X%20(TWITTER)-@OSN__Reports-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+    <img src="https://img.shields.io/badge/X-@OSN__Reports-00f7ff?style=for-the-badge&logo=x&logoColor=black" alt="X" />
   </a>
+  &nbsp;
   <a href="https://t.me/OSN_Reports" target="_blank">
-    <img src="https://img.shields.io/badge/TELEGRAM-@OSN__Reports-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+    <img src="https://img.shields.io/badge/Telegram-@OSN__Reports-26a5e4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
+  &nbsp;
   <a href="https://github.com/OSK0020" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB-OSK0020-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-OSK0020-7000ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
 
