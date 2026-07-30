@@ -45,7 +45,7 @@
   <rect x="2" y="2" width="846" height="116" rx="18" fill="url(#spotify-bg)" stroke="url(#spotify-border)" stroke-width="1.5"/>
 
   <!-- Spotify Vinyl Record / Album Art Icon -->
-  <a href="https://open.spotify.com/search/Claude%20Code%20Vibe" target="_blank">
+  <a href="https://open.spotify.com/playlist/5l9o7NHJEYaDkql1uVyvTJ" target="_blank">
     <circle cx="60" cy="60" r="42" fill="url(#album-glow)"/>
     <g class="vinyl-spin">
       <circle cx="60" cy="60" r="34" fill="#040404" stroke="#d95338" stroke-width="1.5"/>
