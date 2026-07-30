@@ -113,39 +113,32 @@ Senior-level Full-Stack Engineer and AI Architect specializing in autonomous age
 
 ## 🚀 Popular Repositories & Featured Projects
 
-<div align="center">
-
-### 🌟 Featured Repositories
-
-| Repository | Stars | Language | Description | Link |
-| :--- | :---: | :---: | :--- | :---: |
-| 🤖 **imagetestLAB-poll** | ⭐ 13 | TypeScript | Automated AI image generation evaluation suite for Pollinations.ai models | [Repo](https://github.com/OSK0020/imagetestLAB-poll) |
-| 🛡️ **global-security-data-poll** | ⭐ 8 | TypeScript | Global security data analytics and threat intelligence monitoring | [Repo](https://github.com/OSK0020/global-security-data-poll) |
-| 🖼️ **IAMGE-LAB-WEBSITE** | ⚡ 121 Commits | TypeScript / React | High-performance AI image evaluation lab web portal | [Repo](https://github.com/OSK0020/IAMGE-LAB-WEBSITE) |
-| 📱 **IMAGE-APP-MANEGMENT** | ⚡ Active | TypeScript | Media library & AI image management infrastructure | [Repo](https://github.com/OSK0020/IMAGE-APP-MANEGMENT) |
-| ⚡ **OSK0020 Intelligence Dashboard** | ⚡ Main | HTML5 / CSS3 / JS | Official interactive profile README & visual system | [Repo](https://github.com/OSK0020/OSK0020) |
-
-</div>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=OSK0020&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/projects?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Projects" />
+  </picture>
+</p>
 
 <br/>
+
+### 🤖 **[imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll)**
+> Automated AI image generation evaluation suite for Pollinations.ai models.
+
+![Stars](https://img.shields.io/github/stars/OSK0020/imagetestLAB-poll?style=for-the-badge&color=7000ff&logo=github)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![AI Models](https://img.shields.io/badge/Pollinations.ai-AI%20Eval-00f7ff?style=for-the-badge)
 
 <details>
-<summary>⚡ <b>imagetestLAB-poll</b> — AI Image Generation Evaluation Suite (Click to expand)</summary>
+<summary>⚡ <b>View Architecture & Code Sample</b></summary>
 
 <br/>
 
-### Overview
-An automated testing suite that evaluates different AI image generation models from Pollinations.ai with benchmark analytics and scoring.
-
-| Aspect | Specification |
-| :--- | :--- |
-| **Stack** | TypeScript, Pollinations.ai API, Node.js Async Benchmarking |
-| **Stars & Forks** | ⭐ 13 Stars &bull; 🍴 1 Fork |
-| **Features** | Model latency metrics, output fidelity scoring, automated batch prompts |
-| **Repository** | [OSK0020/imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll) |
+- **Core Functionality**: Evaluates latency, fidelity scoring, and output consistency across AI image generation models.
+- **Tech Stack**: TypeScript, Node.js, Pollinations.ai API, Async Worker Queue.
+- **Repository**: [github.com/OSK0020/imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll)
 
 ```ts
-// AI Image Model Pollinator Core
 import { evaluateModel } from './modelEvaluator';
 
 const result = await evaluateModel({
@@ -158,36 +151,41 @@ console.log(`Fidelity Score: ${result.fidelity}% | Latency: ${result.avgLatencyM
 
 </details>
 
+<br/>
+
+### 🛡️ **[global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)**
+> Global security data analytics and threat intelligence monitoring platform.
+
+![Stars](https://img.shields.io/github/stars/OSK0020/global-security-data-poll?style=for-the-badge&color=5a189a&logo=github)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Security](https://img.shields.io/badge/Security-Data%20Analytics-3fb950?style=for-the-badge)
+
 <details>
-<summary>🛡️ <b>global-security-data-poll</b> — Security Intelligence Monitor (Click to expand)</summary>
+<summary>⚡ <b>View System Details</b></summary>
 
 <br/>
 
-### Overview
-Global security data analytics and threat intelligence monitoring system processing distributed data polls.
-
-| Aspect | Specification |
-| :--- | :--- |
-| **Stack** | TypeScript, Real-time Data Polling, Event Stream Analytics |
-| **Stars** | ⭐ 8 Stars |
-| **Impact** | Live threat detection and automated telemetry aggregation |
-| **Repository** | [OSK0020/global-security-data-poll](https://github.com/OSK0020/global-security-data-poll) |
+- **Core Functionality**: Real-time polling and anomaly detection across distributed security data streams.
+- **Repository**: [github.com/OSK0020/global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)
 
 </details>
 
+<br/>
+
+### 🖼️ **[IAMGE-LAB-WEBSITE](https://github.com/OSK0020/IAMGE-LAB-WEBSITE)**
+> High-performance AI image evaluation lab web portal.
+
+![Commits](https://img.shields.io/badge/Commits-121%2B-9d4edd?style=for-the-badge&logo=git&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
 <details>
-<summary>🖼️ <b>IAMGE-LAB-WEBSITE</b> — AI Image Generation Web Portal (Click to expand)</summary>
+<summary>⚡ <b>View Portal Features</b></summary>
 
 <br/>
 
-### Overview
-High-performance React web platform powering image lab benchmark visualizations and model output side-by-side comparisons.
-
-| Aspect | Specification |
-| :--- | :--- |
-| **Stack** | React, TypeScript, Vite, Tailwind CSS |
-| **Activity** | 121+ Commits |
-| **Repository** | [OSK0020/IAMGE-LAB-WEBSITE](https://github.com/OSK0020/IAMGE-LAB-WEBSITE) |
+- **Core Functionality**: Interactive side-by-side model output visualizer with real-time prompt playground.
+- **Repository**: [github.com/OSK0020/IAMGE-LAB-WEBSITE](https://github.com/OSK0020/IAMGE-LAB-WEBSITE)
 
 </details>
 
