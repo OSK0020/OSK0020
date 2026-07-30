@@ -192,9 +192,9 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OSK0020/OSK0020/main/dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OSK0020/OSK0020/main/light.svg" />
-    <img alt="GitHub Jet Heatmap" src="https://raw.githubusercontent.com/OSK0020/OSK0020/main/dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./light.svg" />
+    <img alt="GitHub Jet Heatmap" src="./dark.svg" width="100%" />
   </picture>
 
   <br/><br/>
