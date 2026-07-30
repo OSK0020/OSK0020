@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="240" viewBox="0 0 850 240" fill="none">
+  <defs>
+    <!-- Outer Card Border Gradient -->
+    <linearGradient id="proj-card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#7000ff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00f7ff" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Inner Card Glass Gradient -->
+    <linearGradient id="inner-card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Inner Card Border -->
+    <linearGradient id="inner-card-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d" />
+      <stop offset="100%" stop-color="#484f58" />
+    </linearGradient>
+
+    <!-- Progress Dial Gradient 1 -->
+    <linearGradient id="dial-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7000ff" />
+      <stop offset="100%" stop-color="#00f7ff" />
+    </linearGradient>
+
+    <!-- Progress Dial Gradient 2 -->
+    <linearGradient id="dial-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fb950" />
+      <stop offset="100%" stop-color="#00f7ff" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title-text { font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 700; fill: #58a6ff; letter-spacing: 1px; }
+    .cmd-text { font-family: 'Fira Code', monospace; font-size: 12px; fill: #8b949e; }
+    .repo-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; font-weight: 800; fill: #f0f6fc; }
+    .repo-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #8b949e; }
+    .badge-bg { fill: #21262d; rx: 10px; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #58a6ff; }
+    .dial-bg { fill: none; stroke: #21262d; stroke-width: 6; }
+    .dial-val { fill: none; stroke-width: 6; stroke-linecap: round; }
+    .dial-text { font-family: 'Fira Code', monospace; font-size: 12px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .star-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #8b949e; }
+  </style>
+
+  <!-- Outer Container Card -->
+  <rect x="2" y="2" width="846" height="236" rx="20" fill="#0d1117" stroke="url(#proj-card-border)" stroke-width="1.5"/>
+
+  <!-- Top Header Line -->
+  <text x="24" y="32" class="title-text">PROJECTS.LIST</text>
+  <text x="160" y="32" class="cmd-text">./projects.sh --all</text>
+  <text x="750" y="32" class="cmd-text">2 pinned</text>
+  <line x1="24" y1="44" x2="826" y2="44" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Repository 1: imagetestLAB-poll -->
+  <a href="https://github.com/OSK0020/imagetestLAB-poll" target="_blank">
+    <g transform="translate(24, 60)">
+      <rect width="390" height="155" rx="14" fill="url(#inner-card-bg)" stroke="url(#inner-card-border)" stroke-width="1"/>
+      
+      <!-- Green Active Dot -->
+      <circle cx="24" cy="24" r="4" fill="#3fb950"/>
+      <text x="36" y="28" font-family="'Fira Code', monospace" font-size="11" fill="#8b949e">imagetestLAB-poll</text>
+      
+      <!-- Repo Name -->
+      <text x="24" y="56" class="repo-title">imagetestLAB-poll</text>
+      
+      <!-- Repo Description -->
+      <text x="24" y="78" class="repo-desc">AI image generation model testing &amp; evaluation</text>
+      <text x="24" y="94" class="repo-desc">suite for Pollinations.ai APIs.</text>
+
+      <!-- Badge & Stars -->
+      <rect x="24" y="112" width="90" height="22" class="badge-bg"/>
+      <text x="34" y="127" class="badge-text">open-source</text>
+
+      <!-- Star Icon & Count -->
+      <path d="M130 118l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.8 4-.6z" fill="#e3b341"/>
+      <text x="142" y="127" class="star-text">13 stars</text>
+
+      <!-- Dial Widget (Right Side) -->
+      <g transform="translate(325, 75)">
+        <circle cx="0" cy="0" r="26" class="dial-bg"/>
+        <!-- 92% circle dashoffset: 2*pi*26 * (1 - 0.92) = 13.06 -->
+        <circle cx="0" cy="0" r="26" class="dial-val" stroke="url(#dial-grad-1)" stroke-dasharray="163.3" stroke-dashoffset="13"/>
+        <text x="0" y="4" class="dial-text">92%</text>
+      </g>
+    </g>
+  </a>
+
+  <!-- Repository 2: global-security-data-poll -->
+  <a href="https://github.com/OSK0020/global-security-data-poll" target="_blank">
+    <g transform="translate(436, 60)">
+      <rect width="390" height="155" rx="14" fill="url(#inner-card-bg)" stroke="url(#inner-card-border)" stroke-width="1"/>
+
+      <!-- Blue Active Dot -->
+      <circle cx="24" cy="24" r="4" fill="#58a6ff"/>
+      <text x="36" y="28" font-family="'Fira Code', monospace" font-size="11" fill="#8b949e">global-security-data-poll</text>
+
+      <!-- Repo Name -->
+      <text x="24" y="56" class="repo-title">global-security-data-poll</text>
+
+      <!-- Repo Description -->
+      <text x="24" y="78" class="repo-desc">Real-time intel &amp; security data dashboard</text>
+      <text x="24" y="94" class="repo-desc">polling live global threat feeds.</text>
+
+      <!-- Badge & Stars -->
+      <rect x="24" y="112" width="85" height="22" class="badge-bg"/>
+      <text x="34" y="127" class="badge-text">dashboard</text>
+
+      <!-- Star Icon & Count -->
+      <path d="M125 118l1.8 3.6 4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.8 4-.6z" fill="#e3b341"/>
+      <text x="137" y="127" class="star-text">8 stars</text>
+
+      <!-- Dial Widget (Right Side) -->
+      <g transform="translate(325, 75)">
+        <circle cx="0" cy="0" r="26" class="dial-bg"/>
+        <!-- 85% circle dashoffset: 2*pi*26 * (1 - 0.85) = 24.5 -->
+        <circle cx="0" cy="0" r="26" class="dial-val" stroke="url(#dial-grad-2)" stroke-dasharray="163.3" stroke-dashoffset="24.5"/>
+        <text x="0" y="4" class="dial-text">85%</text>
+      </g>
+    </g>
+  </a>
+</svg>

@@ -88,12 +88,9 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ## 🚀 Projects I've Actually Built
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=OSK0020&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/projects?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Projects" />
-  </picture>
-</p>
+<div align="center">
+  <img src="./projects.svg" width="100%" alt="OSK0020 Real Projects Card" />
+</div>
 
 <!-- PROJECTS:START -->
 <!-- Auto-generated — do not edit by hand. See .github/workflows/update-projects.yml -->
