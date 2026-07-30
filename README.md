@@ -187,17 +187,7 @@ open_to:
 ## 📬 Connect
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&email=oristern8@gmail.com&website=t.me/OSN_Reports&mode=light" />
-    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&email=oristern8@gmail.com&website=t.me/OSN_Reports" alt="OSK0020 Email & Telegram" />
-  </picture>
-
-  <br/><br/>
-
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&github=OSK0020&mode=light" />
-    <img src="https://www.gitskins.com/api/section/social?username=OSK0020&theme=github-dark&x=OSN_Reports&github=OSK0020" alt="OSK0020 X & GitHub" />
-  </picture>
+  <img src="./connect.svg" width="100%" alt="OSK0020 Connect" />
 
   <br/><br/>
 
