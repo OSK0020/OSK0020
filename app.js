@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const markdownContent = `# OSK0020
 
-> Recruiter-friendly proof and contact path.
+> Not a resume — just what I actually build, in my own words.
 
-**Theme:** GitHub · **Style:** Detailed · **Agent:** Full-Stack Engineer
+**Theme:** GitHub · **Style:** Detailed · **Status:** Student, AI-Powered Builder
 
 ---
 
 ## Header
 
-Hi, I'm **OSK0020**. Building scalable full-stack web applications and leveraging autonomous AI agent systems.
+Hi, I'm **OSK0020**. Student on summer break, building things because I like the challenge — AI does the typing, I do the deciding.
 
 <p align="center">
   <picture>
@@ -24,7 +24,7 @@ Hi, I'm **OSK0020**. Building scalable full-stack web applications and leveragin
 
 ## About Me
 
-Constantly pushing the boundaries of self-learning and technological exploration. My journey focuses on leveraging advanced AI tools and autonomous agents to accelerate development processes and build modern, scalable web solutions.
+No degree yet — just a student spending summer break building things at home because I genuinely like it. I "vibe code": AI is the executing arm, I'm the one steering. When an app I use hits a limit I don't like, I usually just rebuild my own version of it with AI — which is how I've ended up exposed to dozens of different systems and stacks.
 
 <p align="center">
   <picture>
@@ -37,7 +37,7 @@ Constantly pushing the boundaries of self-learning and technological exploration
 
 ## Skills
 
-Selected stack and skill badges generated for full-stack engineering and tactical AI integration.
+Languages, frameworks, and the AI tools I actually vibe code with.
 
 <p align="center">
   <picture>
@@ -88,7 +88,7 @@ Highlights repositories as proof of work.
 
 ## Connect
 
-Connect via social channels and direct uplinks.
+Where to find me.
 
 <p align="center">
   <picture>
