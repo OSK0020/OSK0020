@@ -105,55 +105,83 @@ Senior-level Full-Stack Engineer and AI Architect specializing in autonomous age
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Popular Repositories & Featured Projects
+
+<div align="center">
+
+### 🌟 Featured Repositories
+
+| Repository | Stars | Language | Description | Link |
+| :--- | :---: | :---: | :--- | :---: |
+| 🤖 **imagetestLAB-poll** | ⭐ 13 | TypeScript | Automated AI image generation evaluation suite for Pollinations.ai models | [Repo](https://github.com/OSK0020/imagetestLAB-poll) |
+| 🛡️ **global-security-data-poll** | ⭐ 8 | TypeScript | Global security data analytics and threat intelligence monitoring | [Repo](https://github.com/OSK0020/global-security-data-poll) |
+| 🖼️ **IAMGE-LAB-WEBSITE** | ⚡ 121 Commits | TypeScript / React | High-performance AI image evaluation lab web portal | [Repo](https://github.com/OSK0020/IAMGE-LAB-WEBSITE) |
+| 📱 **IMAGE-APP-MANEGMENT** | ⚡ Active | TypeScript | Media library & AI image management infrastructure | [Repo](https://github.com/OSK0020/IMAGE-APP-MANEGMENT) |
+| ⚡ **OSK0020 Intelligence Dashboard** | ⚡ Main | HTML5 / CSS3 / JS | Official interactive profile README & visual system | [Repo](https://github.com/OSK0020/OSK0020) |
+
+</div>
+
+<br/>
 
 <details>
-<summary>⚡ <b>OSK0020 Intelligence Dashboard System</b> (Click to expand)</summary>
+<summary>⚡ <b>imagetestLAB-poll</b> — AI Image Generation Evaluation Suite (Click to expand)</summary>
 
 <br/>
 
 ### Overview
-A FAANG-grade visual intelligence dashboard and CLI terminal environment designed for profile metrics monitoring.
+An automated testing suite that evaluates different AI image generation models from Pollinations.ai with benchmark analytics and scoring.
 
 | Aspect | Specification |
 | :--- | :--- |
-| **Stack** | TypeScript, React, HTML5 Audio API, CSS Glassmorphism, GitSkins API |
-| **Scale** | Global CDN distribution via Vercel & GitHub Pages |
-| **Performance** | 99+ Lighthouse score, sub-50ms latency |
-| **Security** | Strict CSP headers, sanitized terminal input execution |
-| **Impact** | Live profile visual system used by recruiters and enterprise teams |
-| **Repository** | [OSK0020/OSK0020](https://github.com/OSK0020/OSK0020) |
+| **Stack** | TypeScript, Pollinations.ai API, Node.js Async Benchmarking |
+| **Stars & Forks** | ⭐ 13 Stars &bull; 🍴 1 Fork |
+| **Features** | Model latency metrics, output fidelity scoring, automated batch prompts |
+| **Repository** | [OSK0020/imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll) |
 
 ```ts
-// Autonomous Agent Execution Core
-import { AntigravityAgent } from '@antigravity/sdk';
+// AI Image Model Pollinator Core
+import { evaluateModel } from './modelEvaluator';
 
-const agent = new AntigravityAgent({
-  mode: 'autonomous',
-  telemetry: true,
+const result = await evaluateModel({
+  model: 'pollinations-flux',
+  prompt: 'Futuristic Cyberpunk Intelligence Dashboard',
+  iterations: 10
 });
-
-await agent.executeTask('Deploy FAANG-Grade Profile Visual System');
+console.log(`Fidelity Score: ${result.fidelity}% | Latency: ${result.avgLatencyMs}ms`);
 ```
 
 </details>
 
 <details>
-<summary>🌐 <b>Autonomous Web Agent Orchestrator</b> (Click to expand)</summary>
+<summary>🛡️ <b>global-security-data-poll</b> — Security Intelligence Monitor (Click to expand)</summary>
 
 <br/>
 
 ### Overview
-Enterprise multi-agent framework orchestrating web browsers, automated test runners, and real-time DOM analytics.
+Global security data analytics and threat intelligence monitoring system processing distributed data polls.
 
 | Aspect | Specification |
 | :--- | :--- |
-| **Stack** | Python, FastAPI, Playwright, Antigravity, Redis, Docker |
-| **Scale** | 100k+ parallel synthetic actions / day |
-| **Performance** | Event-driven non-blocking IO loop |
-| **Security** | Sandboxed execution container with token rate-limiting |
-| **Impact** | 10x faster automated browser debugging and visual inspection |
-| **Repository** | [OSK0020/agent-orchestrator](https://github.com/OSK0020) |
+| **Stack** | TypeScript, Real-time Data Polling, Event Stream Analytics |
+| **Stars** | ⭐ 8 Stars |
+| **Impact** | Live threat detection and automated telemetry aggregation |
+| **Repository** | [OSK0020/global-security-data-poll](https://github.com/OSK0020/global-security-data-poll) |
+
+</details>
+
+<details>
+<summary>🖼️ <b>IAMGE-LAB-WEBSITE</b> — AI Image Generation Web Portal (Click to expand)</summary>
+
+<br/>
+
+### Overview
+High-performance React web platform powering image lab benchmark visualizations and model output side-by-side comparisons.
+
+| Aspect | Specification |
+| :--- | :--- |
+| **Stack** | React, TypeScript, Vite, Tailwind CSS |
+| **Activity** | 121+ Commits |
+| **Repository** | [OSK0020/IAMGE-LAB-WEBSITE](https://github.com/OSK0020/IAMGE-LAB-WEBSITE) |
 
 </details>
 
