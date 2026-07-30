@@ -77,7 +77,7 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## 🚀 Projects I've Actually Built
 
 <div align="center">
-  <img src="./projects.svg" width="100%" alt="OSK0020 Real Projects Card" />
+  <img src="./projects.svg?v=2" width="100%" alt="OSK0020 Real Projects Card" />
 </div>
 
 
@@ -137,7 +137,7 @@ open_to:
 
 <div align="center">
   <a href="https://open.spotify.com" target="_blank">
-    <img src="./spotify-card.svg" width="100%" alt="Spotify Live Coding Beats" />
+    <img src="./spotify-card.svg?v=2" width="100%" alt="Spotify Live Coding Beats" />
   </a>
 </div>
 
@@ -146,7 +146,7 @@ open_to:
 ## 📬 Connect
 
 <div align="center">
-  <img src="./connect.svg" width="100%" alt="OSK0020 Connect" />
+  <img src="./connect.svg?v=2" width="100%" alt="OSK0020 Connect" />
 
   <br/><br/>
 
