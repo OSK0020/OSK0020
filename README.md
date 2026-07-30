@@ -57,19 +57,26 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
   <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,android,redux" alt="Frontend and Mobile" />
 </p>
 
-### ⚡ Backend & Databases
+### ⚡ Backend & Cloud Infrastructure
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mysql,sqlite,firebase,supabase" alt="Backend and DBs" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mysql,sqlite,firebase,supabase,vercel,render,netlify" alt="Backend and Cloud" />
 </p>
 
-### ☁️ Tools & Deployment
+### ☁️ Tools & Development Environment
 <p>
-  <img src="https://skillicons.dev/icons?i=vscode,git,docker,blender,androidstudio,render,vercel" alt="Tools" />
+  <img src="https://skillicons.dev/icons?i=vscode,git,docker,blender,androidstudio,githubactions" alt="Tools" />
 </p>
 
-### 🤖 AI Tools & Autonomous Workflows
+### 🤖 AI Ecosystem & Cloud Services
 <p>
-  <img src="https://skillicons.dev/icons?i=bots,py,githubactions,workers" alt="AI Tools" />
+  <img src="https://img.shields.io/badge/Groq-FF4500?style=for-the-badge&logo=lightning&logoColor=white" alt="Groq" />
+  <img src="https://img.shields.io/badge/Google%20AI%20Studio-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="AI Studio" />
+  <img src="https://img.shields.io/badge/Pollinations.ai-00f7ff?style=for-the-badge" alt="Pollinations" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" />
+  <img src="https://img.shields.io/badge/UptimeRobot-3BD671?style=for-the-badge&logo=uptimerobot&logoColor=white" alt="UptimeRobot" />
+  <img src="https://img.shields.io/badge/Stitch-7000ff?style=for-the-badge" alt="Stitch" />
+  <img src="https://img.shields.io/badge/Buffer-231F20?style=for-the-badge&logo=buffer&logoColor=white" alt="Buffer" />
 </p>
 
 ---
