@@ -80,42 +80,6 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
   <img src="./projects.svg" width="100%" alt="OSK0020 Real Projects Card" />
 </div>
 
-<!-- PROJECTS:START -->
-<!-- Auto-generated — do not edit by hand. See .github/workflows/update-projects.yml -->
-
-### 🤖 **[imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll)**
-> An automated testing suite evaluates different AI image generation models from Pollinations.ai.
-
-![Stars](https://img.shields.io/github/stars/OSK0020/imagetestLAB-poll?style=for-the-badge&color=7000ff&logo=github) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
-<details>
-<summary>⚡ <b>View Details</b></summary>
-
-<br/>
-
-- **Stack**: TypeScript
-- **Repository**: [github.com/OSK0020/imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll)
-
-</details>
-
-<br/>
-
-### 🤖 **[global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)**
-> No description yet.
-
-![Stars](https://img.shields.io/github/stars/OSK0020/global-security-data-poll?style=for-the-badge&color=7000ff&logo=github) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
-<details>
-<summary>⚡ <b>View Details</b></summary>
-
-<br/>
-
-- **Stack**: TypeScript
-- **Repository**: [github.com/OSK0020/global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)
-
-</details>
-
-<!-- PROJECTS:END -->
 
 ## 📊 GitHub Analytics & Streak Stats
 
