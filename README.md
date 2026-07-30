@@ -26,7 +26,7 @@
 
   <br/><br/>
 
-  <img src="https://komarev.com/ghpvc/?username=OSK0020&label=PROFILE%20VIEWS&color=7000ff&style=flat-square" alt="Profile Views" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=OSK0020.OSK0020&left_color=gray&right_color=7000ff" alt="Profile Views" />
   <img src="https://img.shields.io/github/followers/OSK0020?label=FOLLOWERS&color=5a189a&style=flat-square" alt="Followers" />
   <img src="https://img.shields.io/github/stars/OSK0020?label=TOTAL%20STARS&color=3c096c&style=flat-square" alt="Stars" />
 
@@ -172,18 +172,6 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Media](https://img.shields.io/badge/Media-Library%20Service-ff9900?style=for-the-badge)
-
----
-
-## 🎵 Spotify // Now Playing & Coding Beats
-
-<div align="center">
-  <a href="https://open.spotify.com" target="_blank">
-    <img src="https://spotify-github-readme.vercel.app/api/spotify?spotify_theme=dark&theme=synthwave&show_user=true" alt="Spotify Now Playing" width="450px" />
-  </a>
-</div>
-
----
 
 ## 📊 GitHub Analytics & Streak Stats
 
