@@ -29,5 +29,5 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git diff --cached --quiet && echo "No changes" || (git commit -m "Auto-update public projects section" && git push)
+          git add projects.svg README.md
+          git diff --cached --quiet && echo "No changes" || (git commit -m "Auto-update public projects SVG card and README" && git push)
