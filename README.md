@@ -87,13 +87,12 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 </p>
 
 ### 🤖 Tactical AI & Agent Workflows
-
-| AI Tool / Framework | Role & Capability | Application |
-| :--- | :---: | :--- |
-| **Antigravity** | Autonomous Coding & Agents | Multi-agent execution, automated file edits, terminal tasks |
-| **Lovable** | Rapid AI Web Prototyping | Component generation, UI design iteration |
-| **UiPilot** | Autonomous UI Automation | End-to-end visual workflow execution |
-| **Pollinations.ai** | AI Image Generation | Evaluation suites & prompt benchmarking |
+<p>
+  <img src="https://img.shields.io/badge/Antigravity-4B0082?style=for-the-badge&logo=gemini&logoColor=white" alt="Antigravity" />
+  <img src="https://img.shields.io/badge/Lovable-FF4B11?style=for-the-badge&logo=heart&logoColor=white" alt="Lovable" />
+  <img src="https://img.shields.io/badge/UiPilot-000000?style=for-the-badge&logo=airplane&logoColor=white" alt="UiPilot" />
+  <img src="https://img.shields.io/badge/Pollinations.ai-00f7ff?style=for-the-badge&logo=openai&logoColor=black" alt="Pollinations.ai" />
+</p>
 
 ---
 
