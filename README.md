@@ -106,72 +106,42 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
   </picture>
 </p>
 
-<br/>
+<!-- PROJECTS:START -->
+<!-- Auto-generated — do not edit by hand. See .github/workflows/update-projects.yml -->
 
 ### 🤖 **[imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll)**
-> A testing project for comparing AI image generation models from Pollinations.ai.
+> An automated testing suite evaluates different AI image generation models from Pollinations.ai.
 
-![Stars](https://img.shields.io/github/stars/OSK0020/imagetestLAB-poll?style=for-the-badge&color=7000ff&logo=github)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![AI Models](https://img.shields.io/badge/Pollinations.ai-AI%20Eval-00f7ff?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/OSK0020/imagetestLAB-poll?style=for-the-badge&color=7000ff&logo=github) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
 <details>
 <summary>⚡ <b>View Details</b></summary>
 
 <br/>
 
-- **Description**: Compares latency, output quality, and consistency across AI image generation models.
-- **Stack**: TypeScript, Pollinations.ai API, Node.js.
+- **Stack**: TypeScript
 - **Repository**: [github.com/OSK0020/imagetestLAB-poll](https://github.com/OSK0020/imagetestLAB-poll)
 
 </details>
 
 <br/>
 
-### 🛡️ **[global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)**
-> A dashboard I built for pulling and visualizing security/intel-style data feeds.
+### 🤖 **[global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)**
+> No description yet.
 
-![Stars](https://img.shields.io/github/stars/OSK0020/global-security-data-poll?style=for-the-badge&color=5a189a&logo=github)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Security](https://img.shields.io/badge/Security-Data%20Analytics-3fb950?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/OSK0020/global-security-data-poll?style=for-the-badge&color=7000ff&logo=github) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
 <details>
 <summary>⚡ <b>View Details</b></summary>
 
 <br/>
 
-- **Description**: Polls live data feeds and visualizes them in a real-time dashboard.
-- **Stack**: TypeScript, Next.js, Data Visualizations.
+- **Stack**: TypeScript
 - **Repository**: [github.com/OSK0020/global-security-data-poll](https://github.com/OSK0020/global-security-data-poll)
 
 </details>
 
-<br/>
-
-### 🖼️ **[IAMGE-LAB-WEBSITE](https://github.com/OSK0020/IAMGE-LAB-WEBSITE)**
-> A web portal for comparing AI image model outputs side by side.
-
-![Commits](https://img.shields.io/badge/Commits-121%2B-9d4edd?style=for-the-badge&logo=git&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-
-<details>
-<summary>⚡ <b>View Details</b></summary>
-
-<br/>
-
-- **Description**: Interactive side-by-side model output viewer and prompt playground.
-- **Repository**: [github.com/OSK0020/IAMGE-LAB-WEBSITE](https://github.com/OSK0020/IAMGE-LAB-WEBSITE)
-
-</details>
-
-<br/>
-
-### 📱 **[IMAGE-APP-MANEGMENT](https://github.com/OSK0020/IMAGE-APP-MANEGMENT)**
-> A media library / image management tool I'm building out.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Media](https://img.shields.io/badge/Media-Library%20Service-ff9900?style=for-the-badge)
+<!-- PROJECTS:END -->
 
 ## 📊 GitHub Analytics & Streak Stats
 
