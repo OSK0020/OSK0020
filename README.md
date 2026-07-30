@@ -137,7 +137,7 @@ open_to:
 
 <div align="center">
   <a href="https://open.spotify.com/playlist/5l9o7NHJEYaDkql1uVyvTJ" target="_blank">
-    <img src="./spotify-card.svg?v=5" width="100%" alt="Spotify Live Coding Beats" />
+    <img src="./spotify-card.svg?v=6" width="100%" alt="Spotify Live Coding Beats" />
   </a>
 </div>
 
