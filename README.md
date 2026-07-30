@@ -57,7 +57,7 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🛠️ Tech Stack & Tactical AI
 
 <p align="center">
   <picture>
@@ -86,9 +86,7 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
   <img src="https://skillicons.dev/icons?i=vscode,git,docker,blender,androidstudio,render,vercel" alt="Tools" />
 </p>
 
----
-
-## 🤖 Tactical AI & Agent Workflows
+### 🤖 Tactical AI & Agent Workflows
 
 | AI Tool / Framework | Role & Capability | Application |
 | :--- | :---: | :--- |
