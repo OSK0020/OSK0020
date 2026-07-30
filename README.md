@@ -174,6 +174,16 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 
 ---
 
+## 🎵 Spotify // Now Playing & Coding Beats
+
+<div align="center">
+  <a href="https://open.spotify.com" target="_blank">
+    <img src="https://spotify-github-readme.vercel.app/api/spotify?spotify_theme=dark&theme=synthwave&show_user=true" alt="Spotify Now Playing" width="450px" />
+  </a>
+</div>
+
+---
+
 ## 📊 GitHub Analytics
 
 <div align="center">
@@ -185,14 +195,30 @@ Full-stack Developer & AI Enthusiast specializing in building intelligent, data-
 
 ---
 
+## 🌐 3D Isometric Contribution Globe
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="OSK0020 Contribution Grid" />
+  </picture>
+</div>
+
+---
+
 ## 📈 Live Real GitHub Contribution Heatmap
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/OSK0020/OSK0020/output/github-contribution-grid-snake-dark.svg" alt="OSK0020 Real Contribution Snake Animation" width="100%" />
+</div>
 
-  <br/><br/>
+---
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="Activity Graph" />
+## ⚡ Dynamic Recent Activity Stream
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="Activity Stream Graph" />
 </div>
 
 ---
