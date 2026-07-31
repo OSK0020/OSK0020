@@ -76,7 +76,7 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## 📊 GitHub Analytics & Streak Stats
 
 <div align="center">
-  <img src="./gitskins-stats.svg" alt="OSK0020 GitSkins Stats Card" />
+  <img src="./stats.svg?v=1" width="100%" alt="OSK0020 Dynamic Stats HUD Card" />
   <br/><br/>
   <a href="https://git.io/streak-stats" target="_blank">
     <img src="./streak-stats.svg" alt="GitHub Streak Stats" />
