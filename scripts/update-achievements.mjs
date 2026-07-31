@@ -200,7 +200,6 @@ function generateSvgCard(items) {
   <rect x="2" y="2" width="846" height="${svgHeight - 4}" rx="20" fill="#0d1117" stroke="url(#card-outer-border)" stroke-width="1.5"/>
 
   <text x="24" y="32" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">ACHIEVEMENTS.HUD</text>
-  <text x="175" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">./achievements.sh --auto-sync</text>
   <text x="710" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">${unlockedCount}/${items.length} unlocked</text>
   <line x1="24" y1="44" x2="826" y2="44" stroke="#30363d" stroke-width="1"/>
 

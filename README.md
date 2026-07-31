@@ -9,22 +9,11 @@
 
 
 
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=OSK0020&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/hero?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Hero" />
-  </picture>
 </div>
 
 ---
 
 ## 📌 About Me
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/about?username=OSK0020&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/about?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins About" />
-  </picture>
-</p>
 
 I'm a student — no degree, not even close, just someone who spends summer break building things at home because I genuinely like it. I don't come from a "professional dev" background; most of what I know, I picked up by doing.
 
@@ -39,13 +28,6 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ---
 
 ## 🛠️ Tech Stack & Tools
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=OSK0020&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/stack?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stack" />
-  </picture>
-</p>
 
 ### 💻 Languages
 <p>
@@ -84,13 +66,6 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## 📊 GitHub Analytics & Streak Stats
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark&mode=light" />
-    <img src="https://www.gitskins.com/api/section/stats?username=OSK0020&theme=github-dark" alt="OSK0020 GitSkins Stats" />
-  </picture>
-
-  <br/><br/>
-
   <a href="https://git.io/streak-stats" target="_blank">
     <img src="./streak-stats.svg" alt="GitHub Streak Stats" />
   </a>
