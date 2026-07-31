@@ -15,15 +15,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: OSK0020
       - name: Commit & Push 3D Contrib SVGs
         run: |
-          git config user.name 'OSK0020'
-          git config user.email 'oristern8@gmail.com'
-          git add -A .
-          git commit -m "Generated 3D Contribution Graph" || exit 0
-          git push
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add profile-3d-contrib
+          git diff --cached --quiet && echo "No changes to commit" || (git commit -m "Auto-update 3D Contribution Graph" && git push)
