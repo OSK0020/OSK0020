@@ -5,15 +5,19 @@
 
 
 
-  <br/><br/>
-
-
-
+  <br/>
+  <img src="./gitskins-hero.svg" alt="OSK0020 Hero Card" />
 </div>
 
 ---
 
 ## 📌 About Me
+
+<div align="center">
+  <img src="./gitskins-about.svg" alt="OSK0020 About Card" />
+</div>
+
+<br/>
 
 I'm a student — no degree, not even close, just someone who spends summer break building things at home because I genuinely like it. I don't come from a "professional dev" background; most of what I know, I picked up by doing.
 
@@ -28,6 +32,12 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ---
 
 ## 🛠️ Tech Stack & Tools
+
+<div align="center">
+  <img src="./gitskins-stack.svg" alt="OSK0020 Stack Card" />
+</div>
+
+<br/>
 
 ### 💻 Languages
 <p>
@@ -66,6 +76,8 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## 📊 GitHub Analytics & Streak Stats
 
 <div align="center">
+  <img src="./gitskins-stats.svg" alt="OSK0020 GitSkins Stats Card" />
+  <br/><br/>
   <a href="https://git.io/streak-stats" target="_blank">
     <img src="./streak-stats.svg" alt="GitHub Streak Stats" />
   </a>
