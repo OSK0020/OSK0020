@@ -92,7 +92,7 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
   <br/><br/>
 
   <a href="https://git.io/streak-stats" target="_blank">
-    <img src="https://streak-stats.demolab.com/?user=OSK0020&theme=dark&hide_border=true" alt="GitHub Streak Stats" />
+    <img src="./streak-stats.svg" alt="GitHub Streak Stats" />
   </a>
 </div>
 
@@ -101,19 +101,7 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Galaxy%20Brain-🧠%20Unlocked-7B2CBF?style=for-the-badge&logo=github&logoColor=white" alt="Galaxy Brain" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/YOLO-🔀%20Unlocked-FF4081?style=for-the-badge&logo=github&logoColor=white" alt="YOLO" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Quickdraw-🤠%20Unlocked-FFB703?style=for-the-badge&logo=github&logoColor=white" alt="Quickdraw" />
-  
-  <br/><br/>
-  
-  <img src="https://img.shields.io/badge/Pull%20Shark-🦈%20Unlocked-0077B6?style=for-the-badge&logo=github&logoColor=white" alt="Pull Shark" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Starstruck-⭐%20Unlocked-E63946?style=for-the-badge&logo=github&logoColor=white" alt="Starstruck" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Pair%20Extraordinaire-👯%20In%20Progress-2A9D8F?style=for-the-badge&logo=github&logoColor=white" alt="Pair Extraordinaire" />
+  <img src="./achievements.svg?v=1" width="100%" alt="OSK0020 Achievements Card" />
 </div>
 
 ---
@@ -141,7 +129,7 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## ⚡ Recent Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OSK0020&theme=react-dark&hide_border=true&area=true" width="100%" alt="Activity Stream Graph" />
+  <img src="./activity-graph.svg" width="100%" alt="Activity Stream Graph" />
 </div>
 
 ---

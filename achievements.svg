@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="493" viewBox="0 0 850 493" fill="none">
+  <defs>
+    <linearGradient id="card-outer-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#7000ff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00f7ff" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d" />
+      <stop offset="100%" stop-color="#484f58" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="846" height="489" rx="20" fill="#0d1117" stroke="url(#card-outer-border)" stroke-width="1.5"/>
+
+  <text x="24" y="32" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">ACHIEVEMENTS.HUD</text>
+  <text x="175" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">./achievements.sh --status</text>
+  <text x="710" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">5/6 unlocked</text>
+  <line x1="24" y1="44" x2="826" y2="44" stroke="#30363d" stroke-width="1"/>
+
+  <g transform="translate(24, 60)">
+      <rect width="390" height="125" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
+      
+      <!-- Icon Glow Circle -->
+      <circle cx="45" cy="45" r="24" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">🧠</text>
+
+      <!-- Badge Title & Details -->
+      <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">Galaxy Brain</text>
+      <text x="82" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Answer accepted in GitHub Discussions</text>
+
+      <!-- Status Pill -->
+      <rect x="82" y="74" width="82" height="20" fill="#238636" fill-opacity="0.25" stroke="#238636" stroke-width="1" rx="10"/>
+      <text x="123" y="88" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
+
+      <!-- Tier Badge -->
+      <text x="365" y="38" font-family="'Fira Code', monospace" font-size="10" font-weight="600" fill="#a855f7" text-anchor="end">Gold</text>
+
+      <!-- Progress Bar -->
+      <rect x="82" y="104" width="280" height="6" fill="#21262d" rx="3"/>
+      <rect x="82" y="104" width="280" height="6" fill="#a855f7" rx="3"/>
+    </g>
+
+  <g transform="translate(436, 60)">
+      <rect width="390" height="125" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
+      
+      <!-- Icon Glow Circle -->
+      <circle cx="45" cy="45" r="24" fill="#ec4899" fill-opacity="0.15" stroke="#ec4899" stroke-width="1.5"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">🔀</text>
+
+      <!-- Badge Title & Details -->
+      <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">YOLO</text>
+      <text x="82" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Merged PR directly without code review</text>
+
+      <!-- Status Pill -->
+      <rect x="82" y="74" width="82" height="20" fill="#238636" fill-opacity="0.25" stroke="#238636" stroke-width="1" rx="10"/>
+      <text x="123" y="88" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
+
+      <!-- Tier Badge -->
+      <text x="365" y="38" font-family="'Fira Code', monospace" font-size="10" font-weight="600" fill="#ec4899" text-anchor="end">Silver</text>
+
+      <!-- Progress Bar -->
+      <rect x="82" y="104" width="280" height="6" fill="#21262d" rx="3"/>
+      <rect x="82" y="104" width="280" height="6" fill="#ec4899" rx="3"/>
+    </g>
+
+  <g transform="translate(24, 201)">
+      <rect width="390" height="125" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
+      
+      <!-- Icon Glow Circle -->
+      <circle cx="45" cy="45" r="24" fill="#eab308" fill-opacity="0.15" stroke="#eab308" stroke-width="1.5"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">🤠</text>
+
+      <!-- Badge Title & Details -->
+      <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">Quickdraw</text>
+      <text x="82" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Closed issue or PR within 5 minutes</text>
+
+      <!-- Status Pill -->
+      <rect x="82" y="74" width="82" height="20" fill="#238636" fill-opacity="0.25" stroke="#238636" stroke-width="1" rx="10"/>
+      <text x="123" y="88" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
+
+      <!-- Tier Badge -->
+      <text x="365" y="38" font-family="'Fira Code', monospace" font-size="10" font-weight="600" fill="#eab308" text-anchor="end">Bronze</text>
+
+      <!-- Progress Bar -->
+      <rect x="82" y="104" width="280" height="6" fill="#21262d" rx="3"/>
+      <rect x="82" y="104" width="280" height="6" fill="#eab308" rx="3"/>
+    </g>
+
+  <g transform="translate(436, 201)">
+      <rect width="390" height="125" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
+      
+      <!-- Icon Glow Circle -->
+      <circle cx="45" cy="45" r="24" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="1.5"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">🦈</text>
+
+      <!-- Badge Title & Details -->
+      <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">Pull Shark</text>
+      <text x="82" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Opened &amp; merged pull requests</text>
+
+      <!-- Status Pill -->
+      <rect x="82" y="74" width="82" height="20" fill="#238636" fill-opacity="0.25" stroke="#238636" stroke-width="1" rx="10"/>
+      <text x="123" y="88" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
+
+      <!-- Tier Badge -->
+      <text x="365" y="38" font-family="'Fira Code', monospace" font-size="10" font-weight="600" fill="#06b6d4" text-anchor="end">Bronze</text>
+
+      <!-- Progress Bar -->
+      <rect x="82" y="104" width="280" height="6" fill="#21262d" rx="3"/>
+      <rect x="82" y="104" width="280" height="6" fill="#06b6d4" rx="3"/>
+    </g>
+
+  <g transform="translate(24, 342)">
+      <rect width="390" height="125" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
+      
+      <!-- Icon Glow Circle -->
+      <circle cx="45" cy="45" r="24" fill="#f43f5e" fill-opacity="0.15" stroke="#f43f5e" stroke-width="1.5"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">⭐</text>
+
+      <!-- Badge Title & Details -->
+      <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">Starstruck</text>
+      <text x="82" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Created repository with star milestones</text>
+
+      <!-- Status Pill -->
+      <rect x="82" y="74" width="82" height="20" fill="#238636" fill-opacity="0.25" stroke="#238636" stroke-width="1" rx="10"/>
+      <text x="123" y="88" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
+
+      <!-- Tier Badge -->
+      <text x="365" y="38" font-family="'Fira Code', monospace" font-size="10" font-weight="600" fill="#f43f5e" text-anchor="end">Bronze</text>
+
+      <!-- Progress Bar -->
+      <rect x="82" y="104" width="280" height="6" fill="#21262d" rx="3"/>
+      <rect x="82" y="104" width="280" height="6" fill="#f43f5e" rx="3"/>
+    </g>
+
+  <g transform="translate(436, 342)">
+      <rect width="390" height="125" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
+      
+      <!-- Icon Glow Circle -->
+      <circle cx="45" cy="45" r="24" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5"/>
+      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">👯</text>
+
+      <!-- Badge Title & Details -->
+      <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">Pair Extraordinaire</text>
+      <text x="82" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">Co-authored commits with collaborators</text>
+
+      <!-- Status Pill -->
+      <rect x="82" y="74" width="98" height="20" fill="#1f6feb" fill-opacity="0.25" stroke="#1f6feb" stroke-width="1" rx="10"/>
+      <text x="131" y="88" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#58a6ff" text-anchor="middle">IN PROGRESS</text>
+
+      <!-- Tier Badge -->
+      <text x="365" y="38" font-family="'Fira Code', monospace" font-size="10" font-weight="600" fill="#10b981" text-anchor="end">Ongoing</text>
+
+      <!-- Progress Bar -->
+      <rect x="82" y="104" width="280" height="6" fill="#21262d" rx="3"/>
+      <rect x="82" y="104" width="182" height="6" fill="#10b981" rx="3"/>
+    </g>
+</svg>

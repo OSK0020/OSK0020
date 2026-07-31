@@ -1,0 +1,31 @@
+name: Update Achievements HUD Card
+
+on:
+  schedule:
+    - cron: "0 */5 * * *" # every 5 hours
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-achievements:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate achievements.svg HUD card
+        run: node scripts/update-achievements.mjs
+
+      - name: Commit & Push if achievements.svg changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add achievements.svg
+          git diff --cached --quiet && echo "No changes to commit" || (git commit -m "Auto-update achievements.svg HUD card" && git push)
