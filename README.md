@@ -98,30 +98,22 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ---
 
-## 🏆 GitHub Achievements & Trophies
+## 🏆 GitHub Achievements
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=darkhub&no-frame=true&no-bg=true&column=6" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=flat&no-frame=true&no-bg=true&column=6" />
-    <img src="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=darkhub&no-frame=true&no-bg=true&column=6" alt="OSK0020 GitHub Trophies" />
-  </picture>
-
+  <img src="https://img.shields.io/badge/Galaxy%20Brain-🧠%20Unlocked-7B2CBF?style=for-the-badge&logo=github&logoColor=white" alt="Galaxy Brain" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/YOLO-🔀%20Unlocked-FF4081?style=for-the-badge&logo=github&logoColor=white" alt="YOLO" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Quickdraw-🤠%20Unlocked-FFB703?style=for-the-badge&logo=github&logoColor=white" alt="Quickdraw" />
+  
   <br/><br/>
-
-  <p align="center">
-    <img src="https://github.githubassets.com/assets/galaxy-brain-default-7f837512a307.png" width="60" alt="Galaxy Brain" title="Galaxy Brain: Answer accepted in GitHub Discussions" />
-    &nbsp;
-    <img src="https://github.githubassets.com/assets/yolo-default-be9522194689.png" width="60" alt="YOLO" title="YOLO: Merged PR without review" />
-    &nbsp;
-    <img src="https://github.githubassets.com/assets/quickdraw-default-e7e174b0c79e.png" width="60" alt="Quickdraw" title="Quickdraw: Closed issue/PR within 5 minutes" />
-    &nbsp;
-    <img src="https://github.githubassets.com/assets/pull-shark-default-236b283d6474.png" width="60" alt="Pull Shark" title="Pull Shark: Opened/merged PRs" />
-    &nbsp;
-    <img src="https://github.githubassets.com/assets/starstruck-default-b6fa0340c496.png" width="60" alt="Starstruck" title="Starstruck: Created repository with 16+ stars" />
-    &nbsp;
-    <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-87002008b8c5.png" width="60" alt="Pair Extraordinaire" title="Pair Extraordinaire: Co-authored commits" />
-  </p>
+  
+  <img src="https://img.shields.io/badge/Pull%20Shark-🦈%20Unlocked-0077B6?style=for-the-badge&logo=github&logoColor=white" alt="Pull Shark" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Starstruck-⭐%20Unlocked-E63946?style=for-the-badge&logo=github&logoColor=white" alt="Starstruck" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Pair%20Extraordinaire-👯%20In%20Progress-2A9D8F?style=for-the-badge&logo=github&logoColor=white" alt="Pair Extraordinaire" />
 </div>
 
 ---
