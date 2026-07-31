@@ -88,7 +88,7 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 ## 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="./achievements.svg?v=1" width="100%" alt="OSK0020 Achievements Card" />
+  <img src="./achievements.svg?v=3" width="100%" alt="OSK0020 Achievements Card" />
 </div>
 
 ---
