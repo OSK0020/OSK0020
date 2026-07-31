@@ -1,73 +1,66 @@
 #!/usr/bin/env node
-// Automatically generates the custom HUD Achievements SVG card (achievements.svg)
-// Matches the exact visual language of projects.svg in OSK0020 repository.
+// Automatically scrapes OSK0020's GitHub profile to detect ALL unlocked achievements,
+// fetches their official high-res badge icons from GitHub CDN, encodes them as Base64 Data URIs,
+// and generates a self-contained, 100% dynamic HUD achievements card (achievements.svg).
+// Runs automatically every 5 hours via GitHub Actions.
 
 import fs from "fs";
 
+const USERNAME = "OSK0020";
 const SVG_PATH = "achievements.svg";
 
-const ACHIEVEMENTS_DATA = [
-  {
-    id: "galaxy-brain",
+// Catalogue of standard GitHub Achievements with descriptions and default fallback icons
+const ACHIEVEMENT_CATALOG = {
+  "galaxy brain": {
     name: "Galaxy Brain",
-    icon: "🧠",
     desc: "Answer accepted in GitHub Discussions",
-    status: "UNLOCKED",
     tier: "Gold",
     color: "#a855f7",
-    progress: 100,
+    fallbackUrl: "https://github.githubassets.com/assets/galaxy-brain-default-847262c21056.png"
   },
-  {
-    id: "yolo",
+  "yolo": {
     name: "YOLO",
-    icon: "🔀",
     desc: "Merged PR directly without code review",
-    status: "UNLOCKED",
     tier: "Silver",
     color: "#ec4899",
-    progress: 100,
+    fallbackUrl: "https://github.githubassets.com/assets/yolo-default-be0bbff04951.png"
   },
-  {
-    id: "quickdraw",
+  "quickdraw": {
     name: "Quickdraw",
-    icon: "🤠",
     desc: "Closed issue or PR within 5 minutes",
-    status: "UNLOCKED",
     tier: "Bronze",
     color: "#eab308",
-    progress: 100,
+    fallbackUrl: "https://github.githubassets.com/assets/quickdraw-default--light-8f798b35341a.png"
   },
-  {
-    id: "pull-shark",
+  "pull shark": {
     name: "Pull Shark",
-    icon: "🦈",
     desc: "Opened & merged pull requests",
-    status: "UNLOCKED",
     tier: "Bronze",
     color: "#06b6d4",
-    progress: 100,
+    fallbackUrl: "https://github.githubassets.com/assets/pull-shark-default-236b283d6474.png"
   },
-  {
-    id: "starstruck",
+  "starstruck": {
     name: "Starstruck",
-    icon: "⭐",
     desc: "Created repository with star milestones",
-    status: "UNLOCKED",
     tier: "Bronze",
     color: "#f43f5e",
-    progress: 100,
+    fallbackUrl: "https://github.githubassets.com/assets/starstruck-default-b6fa0340c496.png"
   },
-  {
-    id: "pair-extraordinaire",
+  "pair extraordinaire": {
     name: "Pair Extraordinaire",
-    icon: "👯",
     desc: "Co-authored commits with collaborators",
-    status: "IN PROGRESS",
     tier: "Ongoing",
     color: "#10b981",
-    progress: 65,
+    fallbackUrl: "https://github.githubassets.com/assets/pair-extraordinaire-default-87002008b8c5.png"
   },
-];
+  "public sponsor": {
+    name: "Public Sponsor",
+    desc: "Sponsoring open source projects",
+    tier: "Gold",
+    color: "#ea4c89",
+    fallbackUrl: "https://github.githubassets.com/assets/public-sponsor-default-73587b1c3121.png"
+  }
+};
 
 function escapeXml(str) {
   if (!str) return "";
@@ -77,6 +70,62 @@ function escapeXml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&apos;");
+}
+
+async function fetchImageAsBase64(url) {
+  try {
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        Accept: "image/png,image/*"
+      }
+    });
+    if (!res.ok) return null;
+    const arrayBuffer = await res.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    return `data:image/png;base64,${buffer.toString("base64")}`;
+  } catch (err) {
+    console.error(`Failed to fetch image Base64 for ${url}:`, err.message);
+    return null;
+  }
+}
+
+async function scrapeProfileAchievements() {
+  const profileUrl = `https://github.com/${USERNAME}`;
+  console.log(`Scraping profile achievements from ${profileUrl}...`);
+
+  const res = await fetch(profileUrl, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+  });
+
+  if (!res.ok) {
+    throw new Error(`Failed to scrape profile: ${res.status} ${res.statusText}`);
+  }
+
+  const html = await res.text();
+  const unlockedMap = new Map();
+
+  const imgMatches = [...html.matchAll(/<img[^>]+>/gi)];
+  for (const m of imgMatches) {
+    const tag = m[0];
+    if (tag.includes("githubassets.com/assets/")) {
+      const srcMatch = tag.match(/src="([^"]+)"/i);
+      const altMatch = tag.match(/alt="Achievement:\s*([^"]+)"/i);
+      if (srcMatch && altMatch) {
+        const name = altMatch[1].trim();
+        const key = name.toLowerCase();
+        unlockedMap.set(key, {
+          name,
+          src: srcMatch[1]
+        });
+      }
+    }
+  }
+
+  console.log(`Detected ${unlockedMap.size} unlocked achievements on profile:`, [...unlockedMap.keys()]);
+  return unlockedMap;
 }
 
 function generateSvgCard(items) {
@@ -98,16 +147,19 @@ function generateSvgCard(items) {
 
     const name = escapeXml(item.name);
     const desc = escapeXml(item.desc);
-    const isUnlocked = item.status === "UNLOCKED";
+    const isUnlocked = item.isUnlocked;
     const statusBg = isUnlocked ? "#238636" : "#1f6feb";
     const statusText = isUnlocked ? "UNLOCKED" : "IN PROGRESS";
 
-    return `  <g transform="translate(${x}, ${y})">
+    const imageElement = item.base64
+      ? `<image href="${item.base64}" x="18" y="18" width="54" height="54" />`
+      : `<circle cx="45" cy="45" r="24" fill="${item.color}" fill-opacity="0.15" stroke="${item.color}" stroke-width="1.5"/><text x="45" y="52" font-size="22" text-anchor="middle">🏆</text>`;
+
+    return `  <g transform="translate(${x}, ${y})" opacity="${isUnlocked ? "1" : "0.75"}">
       <rect width="${cardWidth}" height="${cardHeight}" rx="14" fill="url(#card-bg)" stroke="url(#card-border)" stroke-width="1"/>
       
-      <!-- Icon Glow Circle -->
-      <circle cx="45" cy="45" r="24" fill="${item.color}" fill-opacity="0.15" stroke="${item.color}" stroke-width="1.5"/>
-      <text x="45" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" text-anchor="middle">${item.icon}</text>
+      <!-- Official Badge Icon -->
+      ${imageElement}
 
       <!-- Badge Title & Details -->
       <text x="82" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#f0f6fc">${name}</text>
@@ -125,6 +177,8 @@ function generateSvgCard(items) {
       <rect x="82" y="104" width="${(280 * item.progress) / 100}" height="6" fill="${item.color}" rx="3"/>
     </g>`;
   }).join("\n\n");
+
+  const unlockedCount = items.filter(i => i.isUnlocked).length;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="850" height="${svgHeight}" viewBox="0 0 850 ${svgHeight}" fill="none">
   <defs>
@@ -146,18 +200,56 @@ function generateSvgCard(items) {
   <rect x="2" y="2" width="846" height="${svgHeight - 4}" rx="20" fill="#0d1117" stroke="url(#card-outer-border)" stroke-width="1.5"/>
 
   <text x="24" y="32" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">ACHIEVEMENTS.HUD</text>
-  <text x="175" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">./achievements.sh --status</text>
-  <text x="710" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">${items.filter(i => i.status === "UNLOCKED").length}/${items.length} unlocked</text>
+  <text x="175" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">./achievements.sh --auto-sync</text>
+  <text x="710" y="32" font-family="'Fira Code', monospace" font-size="12" fill="#8b949e">${unlockedCount}/${items.length} unlocked</text>
   <line x1="24" y1="44" x2="826" y2="44" stroke="#30363d" stroke-width="1"/>
 
 ${itemCardsXml}
 </svg>`;
 }
 
-function main() {
-  const svgContent = generateSvgCard(ACHIEVEMENTS_DATA);
+async function main() {
+  const unlockedMap = await scrapeProfileAchievements();
+  const items = [];
+
+  // Add catalog items
+  for (const [key, catalogItem] of Object.entries(ACHIEVEMENT_CATALOG)) {
+    const isUnlocked = unlockedMap.has(key);
+    const badgeInfo = unlockedMap.get(key);
+    const imageUrl = isUnlocked && badgeInfo ? badgeInfo.src : catalogItem.fallbackUrl;
+    const base64 = await fetchImageAsBase64(imageUrl);
+
+    items.push({
+      ...catalogItem,
+      isUnlocked,
+      progress: isUnlocked ? 100 : 50,
+      base64
+    });
+  }
+
+  // Add any newly unlocked achievements on profile not in catalog
+  for (const [key, badgeInfo] of unlockedMap.entries()) {
+    if (!ACHIEVEMENT_CATALOG[key]) {
+      console.log(`Discovered NEW achievement on profile: ${badgeInfo.name}`);
+      const base64 = await fetchImageAsBase64(badgeInfo.src);
+      items.push({
+        name: badgeInfo.name,
+        desc: "Official GitHub Achievement",
+        tier: "Unlocked",
+        color: "#58a6ff",
+        isUnlocked: true,
+        progress: 100,
+        base64
+      });
+    }
+  }
+
+  const svgContent = generateSvgCard(items);
   fs.writeFileSync(SVG_PATH, svgContent, "utf8");
-  console.log(`Successfully generated ${SVG_PATH} matching projects.svg visual HUD theme!`);
+  console.log(`Successfully updated ${SVG_PATH} with ${unlockedMap.size} real unlocked badges from profile!`);
 }
 
-main();
+main().catch(err => {
+  console.error("Fatal error:", err);
+  process.exit(1);
+});
