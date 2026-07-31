@@ -98,6 +98,18 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ---
 
+## 🧊 3D Contribution Graph
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-view.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-green-animate.svg" />
+    <img src="./profile-3d-contrib/profile-night-view.svg" alt="OSK0020 3D Contribution Graph" width="100%" />
+  </picture>
+</div>
+
+---
+
 ## 📈 Live Contribution Heatmap
 
 <div align="center">
