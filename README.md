@@ -98,6 +98,34 @@ I like a good challenge, so I've built a handful of bots and small tools, mostly
 
 ---
 
+## 🏆 GitHub Achievements & Trophies
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=darkhub&no-frame=true&no-bg=true&column=6" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=flat&no-frame=true&no-bg=true&column=6" />
+    <img src="https://github-profile-trophy.vercel.app/?username=OSK0020&theme=darkhub&no-frame=true&no-bg=true&column=6" alt="OSK0020 GitHub Trophies" />
+  </picture>
+
+  <br/><br/>
+
+  <p align="center">
+    <img src="https://github.githubassets.com/assets/galaxy-brain-default-7f837512a307.png" width="60" alt="Galaxy Brain" title="Galaxy Brain: Answer accepted in GitHub Discussions" />
+    &nbsp;
+    <img src="https://github.githubassets.com/assets/yolo-default-be9522194689.png" width="60" alt="YOLO" title="YOLO: Merged PR without review" />
+    &nbsp;
+    <img src="https://github.githubassets.com/assets/quickdraw-default-e7e174b0c79e.png" width="60" alt="Quickdraw" title="Quickdraw: Closed issue/PR within 5 minutes" />
+    &nbsp;
+    <img src="https://github.githubassets.com/assets/pull-shark-default-236b283d6474.png" width="60" alt="Pull Shark" title="Pull Shark: Opened/merged PRs" />
+    &nbsp;
+    <img src="https://github.githubassets.com/assets/starstruck-default-b6fa0340c496.png" width="60" alt="Starstruck" title="Starstruck: Created repository with 16+ stars" />
+    &nbsp;
+    <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-87002008b8c5.png" width="60" alt="Pair Extraordinaire" title="Pair Extraordinaire: Co-authored commits" />
+  </p>
+</div>
+
+---
+
 ## 🧊 3D Contribution Graph
 
 <div align="center">
