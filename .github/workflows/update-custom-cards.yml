@@ -29,9 +29,9 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add hero.svg about.svg stack.svg gitskins-*.svg
+          git add hero.svg about.svg bio.svg stack.svg gitskins-*.svg
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update OSK custom SVGs (Hero, About, Stack)"
+            git commit -m "Auto-update OSK custom SVGs (Hero, About, Bio, Stack)"
             git pull --rebase origin main
             git push origin main
           else

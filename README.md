@@ -14,20 +14,10 @@
 ## 📌 About Me
 
 <div align="center">
-  <img src="./gitskins-about.svg" alt="OSK0020 About Card" />
+  <img src="./about.svg" alt="OSK0020 About Card" width="100%" />
+  <br/><br/>
+  <img src="./bio.svg" alt="OSK0020 Bio Details Card" width="100%" />
 </div>
-
-<br/>
-
-I'm a student — no degree, not even close, just someone who spends summer break building things at home because I genuinely like it. I don't come from a "professional dev" background; most of what I know, I picked up by doing.
-
-I like a good challenge, so I've built a handful of bots and small tools, mostly because I wanted them to exist. I "vibe code" — AI is the executing arm, I'm the one steering: directing, reviewing, and deciding what actually ships. And when an app I use has some annoying limitation, instead of just being annoyed, I usually end up rebuilding my own version of it with AI. That habit alone has dragged me through dozens of different systems, frameworks, and infrastructures I'd never have touched otherwise.
-
-- 🎓 **Who I am**: Student, no degree yet — this is a summer-break build log, not a resume.
-- 🤖 **What I build**: A few bots, small tools, and whatever solves a problem that's bugging me.
-- ⚡ **How I build**: I "vibe code" — I direct, AI executes. I'm the architect, not just a prompt-typer.
-- 🔓 **Why I build**: App hits a limit I don't like? Instead of accepting it, I rebuild my own version.
-- 🧭 **What I've learned**: Rebuilding things myself is how I ended up exposed to dozens of systems, stacks, and infra I'd never have touched in a classroom.
 
 ---
 
