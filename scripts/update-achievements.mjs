@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 100% Dynamic GitHub Achievements HUD Card Generator (achievements.svg)
 // Scrapes unlocked achievements, fetches high-res badge icons, calculates live metric progress,
-// and applies ULTRA-GLOWING VIBRANT GRADIENT metallic tier borders (Platinum, Gold, Silver, Bronze) & clean metric text.
+// and applies ULTRA-GLOWING VIBRANT GRADIENT metallic tier borders (Platinum, Gold, Silver, Bronze) with CLEAN minimalist layout.
 
 import fs from "fs";
 
@@ -132,64 +132,43 @@ function calculateAchievementMetrics(key) {
       return {
         desc: "Answer accepted in GitHub Discussions",
         tier: "Platinum",
-        current: 36,
-        target: 32,
-        progressPct: 100,
-        subLabel: "36 Accepted Answers (Platinum Tier 💎)"
+        progressPct: 100
       };
     case "pull shark":
       return {
         desc: "Opened & merged pull requests",
         tier: "Silver",
-        current: 16,
-        target: 16,
-        progressPct: 100,
-        subLabel: "16 Merged PRs (Silver Tier 🥈)"
+        progressPct: 100
       };
     case "pair extraordinaire":
       return {
         desc: "Co-authored commits with collaborators",
         tier: "Silver",
-        current: 10,
-        target: 10,
-        progressPct: 100,
-        subLabel: "10 Co-authored PRs (Silver Tier 🥈)"
+        progressPct: 100
       };
     case "starstruck":
       return {
         desc: "Created repository with star milestones",
         tier: "Bronze",
-        current: 21,
-        target: 16,
-        progressPct: 100,
-        subLabel: "21 Total Stars (Bronze Tier 🥉)"
+        progressPct: 100
       };
     case "quickdraw":
       return {
         desc: "Closed issue or PR within 5 minutes",
         tier: "Unlocked",
-        current: 1,
-        target: 1,
-        progressPct: 100,
-        subLabel: "100% Unlocked ✨"
+        progressPct: 100
       };
     case "yolo":
       return {
         desc: "Merged PR directly without code review",
         tier: "Unlocked",
-        current: 1,
-        target: 1,
-        progressPct: 100,
-        subLabel: "100% Unlocked ✨"
+        progressPct: 100
       };
     default:
       return {
         desc: "Official GitHub Achievement",
         tier: "Unlocked",
-        current: 1,
-        target: 1,
-        progressPct: 100,
-        subLabel: "100% Unlocked ✨"
+        progressPct: 100
       };
   }
 }
@@ -220,7 +199,6 @@ function generateSvgCard(items) {
 
     const name = escapeXml(item.name);
     const desc = escapeXml(item.desc);
-    const subLabel = escapeXml(item.subLabel);
 
     const style = TIER_STYLES[item.tier] || TIER_STYLES.Unlocked;
     const gradUrl = `url(#${style.gradId})`;
@@ -233,7 +211,7 @@ function generateSvgCard(items) {
       : `<circle cx="45" cy="45" r="24" fill="${style.color}" fill-opacity="0.15" stroke="${style.color}" stroke-width="1.5"/><text x="45" y="52" font-size="22" text-anchor="middle">🏆</text>`;
 
     return `  <g transform="translate(${x}, ${y})">
-      <!-- GLOWING GRADIENT Metallic Tier Border Card (High Visibility 2.5px Stroke) -->
+      <!-- GLOWING GRADIENT Metallic Tier Border Card -->
       <rect width="${cardWidth}" height="${cardHeight}" rx="14" fill="#161b22" stroke="${gradUrl}" stroke-width="2.5"/>
       
       <!-- Official Badge Icon -->
@@ -243,14 +221,11 @@ function generateSvgCard(items) {
       <text x="82" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="800" fill="#f0f6fc">${name}</text>
       <text x="82" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#8b949e">${desc}</text>
 
-      <!-- Status Pill -->
+      <!-- Clean Status Pill -->
       <rect x="82" y="68" width="76" height="18" fill="#238636" fill-opacity="0.25" stroke="#238636" stroke-width="1" rx="9"/>
       <text x="120" y="80.5" font-family="'Fira Code', monospace" font-size="8.5" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
 
-      <!-- SubLabel Progress Meter Text -->
-      <text x="166" y="80.5" font-family="'Fira Code', monospace" font-size="9.5" font-weight="600" fill="${style.color}">${subLabel}</text>
-
-      <!-- Tier Label with Solid Color for High Visibility -->
+      <!-- Tier Label -->
       <text x="370" y="36" font-family="'Fira Code', monospace" font-size="11.5" font-weight="800" fill="${style.color}" text-anchor="end">${tierLabel}</text>
 
       <!-- Dynamic Progress Bar -->
@@ -297,7 +272,7 @@ async function main() {
 
   const svgContent = generateSvgCard(items);
   fs.writeFileSync(SVG_PATH, svgContent, "utf8");
-  console.log(`Successfully generated high-visibility glowing gradient ${SVG_PATH} for ${items.length} unlocked achievements!`);
+  console.log(`Successfully generated clean minimalist ${SVG_PATH} for ${items.length} unlocked achievements!`);
 }
 
 main().catch(err => {
