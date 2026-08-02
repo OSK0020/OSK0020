@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 100% Dynamic GitHub Achievements HUD Card Generator (achievements.svg)
 // Scrapes unlocked achievements, fetches high-res badge icons, calculates live metric progress,
-// and applies ULTRA-GLOWING GRADIENT metallic tier borders (Platinum, Gold, Silver, Bronze) & progress meters.
+// and applies ULTRA-GLOWING VIBRANT GRADIENT metallic tier borders (Platinum, Gold, Silver, Bronze) & clean metric text.
 
 import fs from "fs";
 
@@ -15,7 +15,7 @@ const TIER_STYLES = {
     gradId: "plat-grad",
     stops: [
       { offset: "0%", color: "#00f7ff" },
-      { offset: "50%", color: "#7000ff" },
+      { offset: "50%", color: "#a855f7" },
       { offset: "100%", color: "#00f7ff" }
     ]
   },
@@ -36,7 +36,7 @@ const TIER_STYLES = {
     stops: [
       { offset: "0%", color: "#ffffff" },
       { offset: "50%", color: "#8a9ba8" },
-      { offset: "100%", color: "#e0e6ed" }
+      { offset: "100%", color: "#ffffff" }
     ]
   },
   Bronze: {
@@ -45,8 +45,8 @@ const TIER_STYLES = {
     gradId: "bronze-grad",
     stops: [
       { offset: "0%", color: "#ff9d42" },
-      { offset: "50%", color: "#8c4711" },
-      { offset: "100%", color: "#cd7f32" }
+      { offset: "50%", color: "#b85c14" },
+      { offset: "100%", color: "#ff9d42" }
     ]
   },
   Unlocked: {
@@ -135,7 +135,7 @@ function calculateAchievementMetrics(key) {
         current: 36,
         target: 32,
         progressPct: 100,
-        subLabel: "36 / 32 Answers (100% Platinum)"
+        subLabel: "36 Accepted Answers (Platinum Tier 💎)"
       };
     case "pull shark":
       return {
@@ -144,7 +144,7 @@ function calculateAchievementMetrics(key) {
         current: 16,
         target: 16,
         progressPct: 100,
-        subLabel: "16 / 16 PRs (100% Silver)"
+        subLabel: "16 Merged PRs (Silver Tier 🥈)"
       };
     case "pair extraordinaire":
       return {
@@ -153,7 +153,7 @@ function calculateAchievementMetrics(key) {
         current: 10,
         target: 10,
         progressPct: 100,
-        subLabel: "10 / 10 Co-authored PRs (100% Silver)"
+        subLabel: "10 Co-authored PRs (Silver Tier 🥈)"
       };
     case "starstruck":
       return {
@@ -162,7 +162,7 @@ function calculateAchievementMetrics(key) {
         current: 21,
         target: 16,
         progressPct: 100,
-        subLabel: "21 / 16 Stars (100% Bronze)"
+        subLabel: "21 Total Stars (Bronze Tier 🥉)"
       };
     case "quickdraw":
       return {
@@ -171,7 +171,7 @@ function calculateAchievementMetrics(key) {
         current: 1,
         target: 1,
         progressPct: 100,
-        subLabel: "Completed (100%)"
+        subLabel: "100% Unlocked ✨"
       };
     case "yolo":
       return {
@@ -180,7 +180,7 @@ function calculateAchievementMetrics(key) {
         current: 1,
         target: 1,
         progressPct: 100,
-        subLabel: "Completed (100%)"
+        subLabel: "100% Unlocked ✨"
       };
     default:
       return {
@@ -189,7 +189,7 @@ function calculateAchievementMetrics(key) {
         current: 1,
         target: 1,
         progressPct: 100,
-        subLabel: "100% Unlocked"
+        subLabel: "100% Unlocked ✨"
       };
   }
 }
@@ -205,7 +205,6 @@ function generateSvgCard(items) {
   const rows = Math.max(1, Math.ceil(items.length / cardsPerRow));
   const svgHeight = startY + rows * (cardHeight + gapY) + 10;
 
-  // Generate defs for all tier gradients
   const gradientDefs = Object.entries(TIER_STYLES).map(([_, s]) => {
     const stopsXml = s.stops.map(st => `<stop offset="${st.offset}" stop-color="${st.color}" />`).join("\n      ");
     return `<linearGradient id="${s.gradId}" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -234,8 +233,8 @@ function generateSvgCard(items) {
       : `<circle cx="45" cy="45" r="24" fill="${style.color}" fill-opacity="0.15" stroke="${style.color}" stroke-width="1.5"/><text x="45" y="52" font-size="22" text-anchor="middle">🏆</text>`;
 
     return `  <g transform="translate(${x}, ${y})">
-      <!-- GLOWING GRADIENT Metallic Tier Border Card -->
-      <rect width="${cardWidth}" height="${cardHeight}" rx="14" fill="#161b22" stroke="${gradUrl}" stroke-width="2"/>
+      <!-- GLOWING GRADIENT Metallic Tier Border Card (High Visibility 2.5px Stroke) -->
+      <rect width="${cardWidth}" height="${cardHeight}" rx="14" fill="#161b22" stroke="${gradUrl}" stroke-width="2.5"/>
       
       <!-- Official Badge Icon -->
       ${imageElement}
@@ -249,12 +248,12 @@ function generateSvgCard(items) {
       <text x="120" y="80.5" font-family="'Fira Code', monospace" font-size="8.5" font-weight="700" fill="#3fb950" text-anchor="middle">UNLOCKED</text>
 
       <!-- SubLabel Progress Meter Text -->
-      <text x="166" y="80.5" font-family="'Fira Code', monospace" font-size="9" fill="#8b949e">${subLabel}</text>
+      <text x="166" y="80.5" font-family="'Fira Code', monospace" font-size="9.5" font-weight="600" fill="${style.color}">${subLabel}</text>
 
-      <!-- Tier Label with Gradient Color -->
-      <text x="370" y="36" font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="${gradUrl}" text-anchor="end">${tierLabel}</text>
+      <!-- Tier Label with Solid Color for High Visibility -->
+      <text x="370" y="36" font-family="'Fira Code', monospace" font-size="11.5" font-weight="800" fill="${style.color}" text-anchor="end">${tierLabel}</text>
 
-      <!-- Glowing Gradient Progress Bar -->
+      <!-- Dynamic Progress Bar -->
       <rect x="82" y="98" width="280" height="7" fill="#0d1117" stroke="#30363d" stroke-width="1" rx="3.5"/>
       <rect x="82" y="98" width="${progressWidth}" height="7" fill="${gradUrl}" rx="3.5"/>
     </g>`;
@@ -298,7 +297,7 @@ async function main() {
 
   const svgContent = generateSvgCard(items);
   fs.writeFileSync(SVG_PATH, svgContent, "utf8");
-  console.log(`Successfully generated glowing gradient ${SVG_PATH} for ${items.length} unlocked achievements!`);
+  console.log(`Successfully generated high-visibility glowing gradient ${SVG_PATH} for ${items.length} unlocked achievements!`);
 }
 
 main().catch(err => {
