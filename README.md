@@ -3,10 +3,12 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20%7C%7C%20STUDENT%20AND%20AI-POWERED%20BUILDER&fontSize=28&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
 
-
-
-  <br/>
-  <img src="./gitskins-hero.svg" alt="OSK0020 Hero Card" />
+  <br/><br/>
+  <a href="https://github.com/OSK0020/OSK0020/actions/workflows/trigger-all.yml">
+    <img src="https://img.shields.io/badge/⚡_Trigger_All_Workflows-00F7FF?style=for-the-badge&logo=githubactions&logoColor=black" alt="Trigger All Workflows" />
+  </a>
+  <br/><br/>
+  <img src="./hero.svg" alt="OSK0020 Hero Card" width="100%" />
 </div>
 
 ---
