@@ -5,7 +5,7 @@
 
   <br/><br/>
   <a href="https://github.com/OSK0020/OSK0020/actions/workflows/trigger-all.yml">
-    <img src="https://img.shields.io/badge/⚡_Trigger_All_Workflows-00F7FF?style=for-the-badge&logo=githubactions&logoColor=black" alt="Trigger All Workflows" />
+    <img src="./refresh-button.svg" alt="⚡ REFRESH ALL DATA // עדכון נתונים בלייב" />
   </a>
   <br/><br/>
   <img src="./hero.svg" alt="OSK0020 Hero Card" width="100%" />

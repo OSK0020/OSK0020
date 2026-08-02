@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 100% INDEPENDENT OSK0020 Custom SVG Cards Generator (Hero, Master Synthesis About, Stack)
+// 100% INDEPENDENT OSK0020 Custom SVG Cards Generator (Hero, Master Synthesis About, Stack, Compact Dark Refresh Button)
 // Generates ultra-premium, dark-mode glassmorphic cards directly from live GitHub API metrics.
 
 import fs from "fs";
@@ -8,6 +8,7 @@ const USERNAME = "OSK0020";
 const HERO_SVG = "hero.svg";
 const ABOUT_SVG = "about.svg";
 const STACK_SVG = "stack.svg";
+const REFRESH_BTN_SVG = "refresh-button.svg";
 
 const LANG_COLORS = {
   TypeScript: "#3178c6",
@@ -184,11 +185,9 @@ function generateSynthesisAboutSvg() {
 
   <rect x="2" y="2" width="${width - 4}" height="${height - 4}" rx="20" fill="#0d1117" stroke="url(#about-border)" stroke-width="1.5"/>
 
-  <!-- Header -->
   <text x="24" y="34" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">OSK0020 // ARCHITECTURE &amp; VISION</text>
   <line x1="24" y1="46" x2="${width - 24}" y2="46" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Story Synthesis Paragraphs -->
   <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
     I'm a student spending summer break building projects at home out of genuine passion for software architecture.
   </text>
@@ -201,7 +200,6 @@ function generateSynthesisAboutSvg() {
 
   <line x1="24" y1="138" x2="${width - 24}" y2="138" stroke="#30363d" stroke-width="1"/>
 
-  <!-- 5 Non-Redundant Cyberpunk HUD Specs -->
   <g transform="translate(24, 154)">
     <g transform="translate(0, 0)">
       <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
@@ -277,8 +275,25 @@ function generateStackSvg(data) {
 </svg>`;
 }
 
+function generateCompactDarkRefreshButtonSvg() {
+  const width = 230;
+  const height = 36;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none">
+  <rect x="1.5" y="1.5" width="${width - 3}" height="${height - 3}" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+  
+  <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#58a6ff">⚡</text>
+  <text x="32" y="22" font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#c9d1d9" letter-spacing="0.5">REFRESH ALL DATA</text>
+  
+  <g transform="translate(178, 8)">
+    <rect width="40" height="20" rx="4" fill="#0d1117" stroke="#238636" stroke-width="1"/>
+    <text x="20" y="14" font-family="'Fira Code', monospace" font-size="9.5" font-weight="700" fill="#3fb950" text-anchor="middle">SYNC</text>
+  </g>
+</svg>`;
+}
+
 async function main() {
-  console.log("Generating 100% synthesis OSK custom cards (hero, master about, stack)...");
+  console.log("Generating 100% synthesis OSK custom cards (hero, master about, stack, compact-refresh-button)...");
   const data = await fetchLiveProfileData();
 
   fs.writeFileSync(HERO_SVG, generateHeroSvg(data), "utf8");
@@ -290,6 +305,10 @@ async function main() {
 
   fs.writeFileSync(STACK_SVG, generateStackSvg(data), "utf8");
   console.log(`Saved ${STACK_SVG}`);
+
+  const refreshBtn = generateCompactDarkRefreshButtonSvg();
+  fs.writeFileSync(REFRESH_BTN_SVG, refreshBtn, "utf8");
+  console.log(`Saved compact dark ${REFRESH_BTN_SVG}`);
 }
 
 main().catch(err => {

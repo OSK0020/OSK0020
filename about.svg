@@ -9,11 +9,9 @@
 
   <rect x="2" y="2" width="846" height="346" rx="20" fill="#0d1117" stroke="url(#about-border)" stroke-width="1.5"/>
 
-  <!-- Header -->
   <text x="24" y="34" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">OSK0020 // ARCHITECTURE &amp; VISION</text>
   <line x1="24" y1="46" x2="826" y2="46" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Story Synthesis Paragraphs -->
   <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
     I'm a student spending summer break building projects at home out of genuine passion for software architecture.
   </text>
@@ -26,7 +24,6 @@
 
   <line x1="24" y1="138" x2="826" y2="138" stroke="#30363d" stroke-width="1"/>
 
-  <!-- 5 Non-Redundant Cyberpunk HUD Specs -->
   <g transform="translate(24, 154)">
     <g transform="translate(0, 0)">
       <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
