@@ -14,9 +14,7 @@
 ## 📌 About Me
 
 <div align="center">
-  <img src="./about.svg" alt="OSK0020 About Card" width="100%" />
-  <br/><br/>
-  <img src="./bio.svg" alt="OSK0020 Bio Details Card" width="100%" />
+  <img src="./about.svg" alt="OSK0020 Master About Card" width="100%" />
 </div>
 
 ---

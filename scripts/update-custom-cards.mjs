@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 100% INDEPENDENT OSK0020 Custom SVG Cards Generator (Hero, About, Bio, Stack)
+// 100% INDEPENDENT OSK0020 Custom SVG Cards Generator (Hero, Master Synthesis About, Stack)
 // Generates ultra-premium, dark-mode glassmorphic cards directly from live GitHub API metrics.
 
 import fs from "fs";
@@ -7,7 +7,6 @@ import fs from "fs";
 const USERNAME = "OSK0020";
 const HERO_SVG = "hero.svg";
 const ABOUT_SVG = "about.svg";
-const BIO_SVG = "bio.svg";
 const STACK_SVG = "stack.svg";
 
 const LANG_COLORS = {
@@ -170,120 +169,68 @@ function generateHeroSvg(data) {
 </svg>`;
 }
 
-function generateAboutSvg() {
+function generateSynthesisAboutSvg() {
   const width = 850;
-  const height = 180;
+  const height = 350;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none">
   <defs>
     <linearGradient id="about-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7000ff" />
-      <stop offset="100%" stop-color="#00f7ff" />
-    </linearGradient>
-  </defs>
-
-  <rect x="2" y="2" width="${width - 4}" height="${height - 4}" rx="20" fill="#0d1117" stroke="url(#about-border)" stroke-width="1.5"/>
-
-  <text x="24" y="34" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">OSK0020 // ARCHITECTURE &amp; VISION</text>
-  <line x1="24" y1="46" x2="${width - 24}" y2="46" stroke="#30363d" stroke-width="1"/>
-
-  <g transform="translate(24, 62)">
-    <rect width="390" height="42" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#00f7ff">🎓 Student Builder</text>
-    <text x="145" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Summer-break build log, not a resume</text>
-  </g>
-
-  <g transform="translate(434, 62)">
-    <rect width="390" height="42" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#a855f7">🤖 Vibe Coding</text>
-    <text x="135" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">I direct architecture, AI executes</text>
-  </g>
-
-  <g transform="translate(24, 116)">
-    <rect width="390" height="42" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#3fb950">⚡ Rebuild Custom</text>
-    <text x="150" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">App hits a limit? I build my own version</text>
-  </g>
-
-  <g transform="translate(434, 116)">
-    <rect width="390" height="42" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ff7b00">🔓 Multi-System</text>
-    <text x="145" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Exposed to dozens of prod stacks</text>
-  </g>
-</svg>`;
-}
-
-function generateBioSvg() {
-  const width = 850;
-  const height = 360;
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none">
-  <defs>
-    <linearGradient id="bio-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1f6feb" opacity="0.8"/>
       <stop offset="50%" stop-color="#7000ff" opacity="0.8"/>
       <stop offset="100%" stop-color="#00f7ff" opacity="0.8"/>
     </linearGradient>
   </defs>
 
-  <rect x="2" y="2" width="${width - 4}" height="${height - 4}" rx="20" fill="#0d1117" stroke="url(#bio-border)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="${width - 4}" height="${height - 4}" rx="20" fill="#0d1117" stroke="url(#about-border)" stroke-width="1.5"/>
 
-  <!-- Paragraph 1 -->
-  <text x="28" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9" line-height="1.6">
-    I'm a student — no degree, not even close, just someone who spends summer break building things at home
-  </text>
-  <text x="28" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
-    because I genuinely like it. I don't come from a "professional dev" background; most of what I know, I picked up by doing.
-  </text>
+  <!-- Header -->
+  <text x="24" y="34" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">OSK0020 // ARCHITECTURE &amp; VISION</text>
+  <line x1="24" y1="46" x2="${width - 24}" y2="46" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Paragraph 2 -->
-  <text x="28" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
-    I like a good challenge, so I've built a handful of bots and small tools. I "vibe code" — AI is the executing arm,
+  <!-- Story Synthesis Paragraphs -->
+  <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
+    I'm a student spending summer break building projects at home out of genuine passion for software architecture.
   </text>
-  <text x="28" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
-    I'm the one steering: directing, reviewing, and deciding what ships. When an app I use hits a limit, I rebuild
+  <text x="24" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
+    I "vibe code" — directing design &amp; system boundaries while using AI as the executing arm to build bots and custom tools.
   </text>
-  <text x="28" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
-    my own version with AI, dragging me through dozens of frameworks and infrastructure I'd never touch otherwise.
+  <text x="24" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#c9d1d9">
+    Whenever an app hits an annoying limit, I rebuild my own version, mastering dozens of frameworks and infrastructure.
   </text>
 
-  <line x1="28" y1="162" x2="${width - 28}" y2="162" stroke="#30363d" stroke-width="1"/>
+  <line x1="24" y1="138" x2="${width - 24}" y2="138" stroke="#30363d" stroke-width="1"/>
 
-  <!-- 5 Cyberpunk Highlight Items -->
-  <g transform="translate(28, 178)">
-    <!-- Item 1 -->
+  <!-- 5 Non-Redundant Cyberpunk HUD Specs -->
+  <g transform="translate(24, 154)">
     <g transform="translate(0, 0)">
-      <rect width="794" height="28" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#00f7ff">🎓 Who I am:</text>
-      <text x="110" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Student, no degree yet — this is a summer-break build log, not a resume.</text>
+      <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#00f7ff">🎓 Identity:</text>
+      <text x="105" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Student &amp; Independent Builder (Summer-break build log, not a resume)</text>
     </g>
 
-    <!-- Item 2 -->
-    <g transform="translate(0, 34)">
-      <rect width="794" height="28" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#a855f7">🤖 What I build:</text>
-      <text x="120" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">A few bots, small tools, and whatever solves a problem that's bugging me.</text>
+    <g transform="translate(0, 36)">
+      <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#a855f7">🤖 Methodology:</text>
+      <text x="135" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">"Vibe Coding" — Directing architecture &amp; system specs while AI executes</text>
     </g>
 
-    <!-- Item 3 -->
-    <g transform="translate(0, 68)">
-      <rect width="794" height="28" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ff7b00">⚡ How I build:</text>
-      <text x="120" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">I "vibe code" — I direct, AI executes. I'm the architect, not just a prompt-typer.</text>
+    <g transform="translate(0, 72)">
+      <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ff7b00">⚡ Philosophy:</text>
+      <text x="120" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Rebuilding custom versions of tools whenever existing apps hit limitations</text>
     </g>
 
-    <!-- Item 4 -->
-    <g transform="translate(0, 102)">
-      <rect width="794" height="28" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#3fb950">🔓 Why I build:</text>
-      <text x="120" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">App hits a limit I don't like? Instead of accepting it, I rebuild my own version.</text>
+    <g transform="translate(0, 108)">
+      <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#3fb950">🔓 Scope:</text>
+      <text x="95" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Autonomous bots, data pipelines, WebGL 3D maps &amp; full-stack applications</text>
     </g>
 
-    <!-- Item 5 -->
-    <g transform="translate(0, 136)">
-      <rect width="794" height="28" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-      <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#58a6ff">🧭 What I've learned:</text>
-      <text x="155" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Rebuilding things myself is how I ended up exposed to dozens of systems &amp; prod stacks.</text>
+    <g transform="translate(0, 144)">
+      <rect width="802" height="30" rx="7" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#58a6ff">🧭 Experience:</text>
+      <text x="125" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#8b949e">Exposure to dozens of production frameworks, databases &amp; cloud infra</text>
     </g>
   </g>
 </svg>`;
@@ -331,17 +278,15 @@ function generateStackSvg(data) {
 }
 
 async function main() {
-  console.log("Generating 100% independent OSK custom cards (hero, about, bio, stack)...");
+  console.log("Generating 100% synthesis OSK custom cards (hero, master about, stack)...");
   const data = await fetchLiveProfileData();
 
   fs.writeFileSync(HERO_SVG, generateHeroSvg(data), "utf8");
   console.log(`Saved ${HERO_SVG}`);
 
-  fs.writeFileSync(ABOUT_SVG, generateAboutSvg(), "utf8");
-  console.log(`Saved ${ABOUT_SVG}`);
-
-  fs.writeFileSync(BIO_SVG, generateBioSvg(), "utf8");
-  console.log(`Saved ${BIO_SVG}`);
+  const masterAbout = generateSynthesisAboutSvg();
+  fs.writeFileSync(ABOUT_SVG, masterAbout, "utf8");
+  console.log(`Saved synthesis ${ABOUT_SVG}`);
 
   fs.writeFileSync(STACK_SVG, generateStackSvg(data), "utf8");
   console.log(`Saved ${STACK_SVG}`);
