@@ -103,14 +103,6 @@
 
 ---
 
-## ⚡ Recent Activity
-
-<div align="center">
-  <img src="./activity-graph.svg" width="100%" alt="Activity Stream Graph" />
-</div>
-
----
-
 ## 🎯 Current Focus
 
 ```yaml
