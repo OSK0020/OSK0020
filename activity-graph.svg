@@ -1,61 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="850" height="220" viewBox="0 0 850 220" fill="none">
-  <defs>
-    <linearGradient id="act-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1f6feb" opacity="0.8"/>
-      <stop offset="50%" stop-color="#7000ff" opacity="0.8"/>
-      <stop offset="100%" stop-color="#00f7ff" opacity="0.8"/>
-    </linearGradient>
-    <linearGradient id="act-area" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00f7ff" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#7000ff" stop-opacity="0.0"/>
-    </linearGradient>
-  </defs>
 
-  <rect x="2" y="2" width="846" height="216" rx="20" fill="#0d1117" stroke="url(#act-border)" stroke-width="1.5"/>
-
-  <text x="24" y="34" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">ACTIVITY.STREAM</text>
-  <text x="180" y="34" font-family="'Fira Code', monospace" font-size="11" fill="#8b949e">Recent 28-day contribution wave &amp; daily peaks</text>
-  <text x="730" y="34" font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#3fb950">&gt; live.scan</text>
-  <line x1="24" y1="46" x2="826" y2="46" stroke="#30363d" stroke-width="1"/>
-
-  <!-- Glowing Area Fill -->
-  <path d="M 25 171.61971830985917 L 54.62962962962963 164.85915492957747 L 84.25925925925927 175 L 113.88888888888889 175 L 143.51851851851853 175 L 173.14814814814815 175 L 202.77777777777777 175 L 232.40740740740742 175 L 262.03703703703707 175 L 291.6666666666667 175 L 321.2962962962963 175 L 350.9259259259259 175 L 380.55555555555554 169.92957746478874 L 410.18518518518516 166.54929577464787 L 439.81481481481484 175 L 469.44444444444446 175 L 499.0740740740741 175 L 528.7037037037037 175 L 558.3333333333334 175 L 587.9629629629629 175 L 617.5925925925926 175 L 647.2222222222222 156.40845070422534 L 676.8518518518518 175 L 706.4814814814815 120.91549295774648 L 736.1111111111111 90.49295774647888 L 765.7407407407408 175 L 795.3703703703703 55 L 825 164.85915492957747 L 825 175 L 25 175 Z" fill="url(#act-area)"/>
-  <path d="M 25 171.61971830985917 L 54.62962962962963 164.85915492957747 L 84.25925925925927 175 L 113.88888888888889 175 L 143.51851851851853 175 L 173.14814814814815 175 L 202.77777777777777 175 L 232.40740740740742 175 L 262.03703703703707 175 L 291.6666666666667 175 L 321.2962962962963 175 L 350.9259259259259 175 L 380.55555555555554 169.92957746478874 L 410.18518518518516 166.54929577464787 L 439.81481481481484 175 L 469.44444444444446 175 L 499.0740740740741 175 L 528.7037037037037 175 L 558.3333333333334 175 L 587.9629629629629 175 L 617.5925925925926 175 L 647.2222222222222 156.40845070422534 L 676.8518518518518 175 L 706.4814814814815 120.91549295774648 L 736.1111111111111 90.49295774647888 L 765.7407407407408 175 L 795.3703703703703 55 L 825 164.85915492957747" fill="none" stroke="#00f7ff" stroke-width="2.5" stroke-linecap="round"/>
-
-  <!-- Vertical Activity Bars -->
-  <rect x="19" y="171" width="12" height="4" rx="3" fill="#1f6feb" fill-opacity="0.85"/>
-<rect x="48.62962962962963" y="164.85915492957747" width="12" height="10.140845070422536" rx="3" fill="#7000ff" fill-opacity="0.85"/>
-<rect x="78.25925925925927" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="107.88888888888889" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="137.51851851851853" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="167.14814814814815" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="196.77777777777777" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="226.40740740740742" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="256.03703703703707" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="285.6666666666667" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="315.2962962962963" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="344.9259259259259" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="374.55555555555554" y="169.92957746478874" width="12" height="5.070422535211268" rx="3" fill="#1f6feb" fill-opacity="0.85"/>
-<rect x="404.18518518518516" y="166.54929577464787" width="12" height="8.450704225352114" rx="3" fill="#7000ff" fill-opacity="0.85"/>
-<rect x="433.81481481481484" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="463.44444444444446" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="493.0740740740741" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="522.7037037037037" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="552.3333333333334" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="581.9629629629629" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="611.5925925925926" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="641.2222222222222" y="156.40845070422534" width="12" height="18.591549295774648" rx="3" fill="#00f7ff" fill-opacity="0.85"/>
-<rect x="670.8518518518518" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="700.4814814814815" y="120.91549295774648" width="12" height="54.08450704225352" rx="3" fill="#00f7ff" fill-opacity="0.85"/>
-<rect x="730.1111111111111" y="90.49295774647888" width="12" height="84.50704225352112" rx="3" fill="#00f7ff" fill-opacity="0.85"/>
-<rect x="759.7407407407408" y="171" width="12" height="4" rx="3" fill="#21262d" fill-opacity="0.85"/>
-<rect x="789.3703703703703" y="55" width="12" height="120" rx="3" fill="#00f7ff" fill-opacity="0.85"/>
-<rect x="819" y="164.85915492957747" width="12" height="10.140845070422536" rx="3" fill="#7000ff" fill-opacity="0.85"/>
-
-  <!-- Baseline -->
-  <line x1="24" y1="175" x2="826" y2="175" stroke="#30363d" stroke-width="1"/>
-
-  <!-- Footer Dates -->
-  <text x="24" y="202" font-family="'Fira Code', monospace" font-size="10" fill="#8b949e">28 Days Ago</text>
-  <text x="760" y="202" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#00f7ff">Today</text>
-</svg>
+    <svg
+        width="400"
+        height="200"
+        viewBox="0 0 420 200"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <style>
+                svg {
+                    font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif;
+                }
+        </style>
+        <rect xmlns="http://www.w3.org/2000/svg" data-testid="card_bg" id="cardBg" x="0.5"
+        y="0.5" rx="4.5" height="100%" stroke="#E4E2E2" fill-opacity="1" width="100%"
+        fill="#44475a" stroke-opacity="1"/>
+        <text x="20" y="100" fill="#bd93f9">Can't fetch any contribution. Please check your username 😬</text>
+    </svg>
