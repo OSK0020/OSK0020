@@ -24,7 +24,7 @@
 ## 🛠️ Tech Stack & Tools
 
 <div align="center">
-  <img src="./gitskins-stack.svg" alt="OSK0020 Stack Card" />
+  <img src="./stack.svg" alt="OSK0020 Stack Card" />
 </div>
 
 <br/>
