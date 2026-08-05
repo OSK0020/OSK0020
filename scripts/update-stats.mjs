@@ -9,7 +9,6 @@ import fs from "fs";
 const USERNAME = "OSK0020";
 const STATS_SVG_PATH = "stats.svg";
 const STREAK_SVG_PATH = "streak-stats.svg";
-const ACTIVITY_SVG_PATH = "activity-graph.svg";
 
 const LANG_COLORS = {
   TypeScript: "#3178c6",
@@ -307,78 +306,6 @@ function generateStreakStatsSvg(cal) {
 </svg>`;
 }
 
-function generateLocalActivityGraphSvg(cal) {
-  const width = 850;
-  const height = 220;
-
-  const rawDays = cal.days || [];
-  const recentDays = rawDays.slice(-28); // last 28 days
-
-  const maxCount = Math.max(5, ...recentDays.map(d => d.count));
-  const barCount = Math.max(1, recentDays.length);
-  const chartWidth = 800;
-  const chartHeight = 120;
-  const startX = 25;
-  const startY = 175;
-
-  const stepX = chartWidth / Math.max(1, barCount - 1);
-
-  // Generate glowing area path & line points
-  const points = recentDays.map((d, i) => {
-    const px = startX + i * stepX;
-    const py = startY - (d.count / maxCount) * chartHeight;
-    return { x: px, y: py, count: d.count, date: d.date };
-  });
-
-  let pathD = `M ${points[0]?.x || startX} ${points[0]?.y || startY}`;
-  for (let i = 1; i < points.length; i++) {
-    pathD += ` L ${points[i].x} ${points[i].y}`;
-  }
-
-  const areaD = `${pathD} L ${points[points.length - 1]?.x || (startX + chartWidth)} ${startY} L ${points[0]?.x || startX} ${startY} Z`;
-
-  const barElements = points.map((p, i) => {
-    const color = p.count > 10 ? "#00f7ff" : p.count > 3 ? "#7000ff" : p.count > 0 ? "#1f6feb" : "#21262d";
-    const h = Math.max(4, (p.count / maxCount) * chartHeight);
-    return `<rect x="${p.x - 6}" y="${startY - h}" width="12" height="${h}" rx="3" fill="${color}" fill-opacity="0.85"/>`;
-  }).join("\n");
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none">
-  <defs>
-    <linearGradient id="act-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1f6feb" opacity="0.8"/>
-      <stop offset="50%" stop-color="#7000ff" opacity="0.8"/>
-      <stop offset="100%" stop-color="#00f7ff" opacity="0.8"/>
-    </linearGradient>
-    <linearGradient id="act-area" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00f7ff" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#7000ff" stop-opacity="0.0"/>
-    </linearGradient>
-  </defs>
-
-  <rect x="2" y="2" width="${width - 4}" height="${height - 4}" rx="20" fill="#0d1117" stroke="url(#act-border)" stroke-width="1.5"/>
-
-  <text x="24" y="34" font-family="'Fira Code', monospace" font-size="13" font-weight="700" fill="#58a6ff" letter-spacing="1">ACTIVITY.STREAM</text>
-  <text x="180" y="34" font-family="'Fira Code', monospace" font-size="11" fill="#8b949e">Recent 28-day contribution wave &amp; daily peaks</text>
-  <text x="730" y="34" font-family="'Fira Code', monospace" font-size="11" font-weight="700" fill="#3fb950">&gt; live.scan</text>
-  <line x1="24" y1="46" x2="${width - 24}" y2="46" stroke="#30363d" stroke-width="1"/>
-
-  <!-- Glowing Area Fill -->
-  <path d="${areaD}" fill="url(#act-area)"/>
-  <path d="${pathD}" fill="none" stroke="#00f7ff" stroke-width="2.5" stroke-linecap="round"/>
-
-  <!-- Vertical Activity Bars -->
-  ${barElements}
-
-  <!-- Baseline -->
-  <line x1="24" y1="${startY}" x2="${width - 24}" y2="${startY}" stroke="#30363d" stroke-width="1"/>
-
-  <!-- Footer Dates -->
-  <text x="24" y="202" font-family="'Fira Code', monospace" font-size="10" fill="#8b949e">28 Days Ago</text>
-  <text x="760" y="202" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#00f7ff">Today</text>
-</svg>`;
-}
-
 async function main() {
   const calendarData = await fetchLiveCalendarData();
   const data = await fetchDynamicGitHubData(calendarData);
@@ -392,11 +319,6 @@ async function main() {
   const streakSvg = generateStreakStatsSvg(calendarData);
   fs.writeFileSync(STREAK_SVG_PATH, streakSvg, "utf8");
   console.log(`Successfully generated ${STREAK_SVG_PATH} locally matching live total contributions!`);
-
-  // 3. Generate 100% INDEPENDENT local activity-graph.svg (NO external Vercel third-party failure risk!)
-  const activitySvg = generateLocalActivityGraphSvg(calendarData);
-  fs.writeFileSync(ACTIVITY_SVG_PATH, activitySvg, "utf8");
-  console.log(`Successfully generated 100% local independent ${ACTIVITY_SVG_PATH}!`);
 }
 
 main().catch(err => {
