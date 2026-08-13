@@ -11,20 +11,20 @@ jobs:
     permissions:
       actions: write
     steps:
-      - name: Trigger all profile workflows sequentially with 2-minute interval
+      - name: Trigger all profile workflows sequentially with 1-minute interval
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Triggering OSK0020 profile workflows with 2-minute intervals..."
+          echo "Triggering OSK0020 profile workflows with 1-minute intervals..."
           gh workflow run 3d-contrib.yml --repo OSK0020/OSK0020
-          sleep 120
+          sleep 60
           gh workflow run snake.yml --repo OSK0020/OSK0020
-          sleep 120
+          sleep 60
           gh workflow run update-achievements.yml --repo OSK0020/OSK0020
-          sleep 120
+          sleep 60
           gh workflow run update-custom-cards.yml --repo OSK0020/OSK0020
-          sleep 120
+          sleep 60
           gh workflow run update-projects.yml --repo OSK0020/OSK0020
-          sleep 120
+          sleep 60
           gh workflow run update-stats.yml --repo OSK0020/OSK0020
-          echo "All 6 profile workflows dispatched successfully with 2-minute intervals!"
+          echo "All 6 profile workflows dispatched successfully with 1-minute intervals!"
