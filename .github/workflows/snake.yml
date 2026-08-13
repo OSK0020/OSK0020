@@ -2,8 +2,8 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    # Run once a day at 04:00 Israel Time (01:00 UTC)
-    - cron: "0 1 * * *"
+    # Run once a day at 04:02 Israel Time (01:02 UTC - 2 min interval)
+    - cron: "2 1 * * *"
   workflow_dispatch:
   push:
     branches:

@@ -2,7 +2,7 @@ name: Update Local Stats Cards
 
 on:
   schedule:
-    - cron: "0 1 * * *" # Once a day at 04:00 Israel Time (01:00 UTC)
+    - cron: "10 1 * * *" # 04:10 Israel Time (01:10 UTC - 2 min interval)
   workflow_dispatch:
   push:
     branches:
