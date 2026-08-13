@@ -236,11 +236,11 @@ function generateSynthesisAboutSvg() {
 
 function generateStackSvg(data) {
   const width = 850;
-  const height = 210;
-
   const langList = Object.entries(data.languagesMap)
     .filter(([_, pct]) => pct > 0)
     .sort((a, b) => b[1] - a[1]);
+
+  const height = 65 + langList.length * 32 + 15;
 
   const bars = langList.map(([lang, pct], idx) => {
     const y = 65 + idx * 32;

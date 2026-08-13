@@ -105,19 +105,48 @@ async function scrapeProfileAchievements() {
   const html = await res.text();
   const unlockedMap = new Map();
 
-  const imgMatches = [...html.matchAll(/<img[^>]+>/gi)];
-  for (const m of imgMatches) {
-    const tag = m[0];
-    if (tag.includes("githubassets.com/assets/")) {
-      const srcMatch = tag.match(/src="([^"]+)"/i);
-      const altMatch = tag.match(/alt="Achievement:\s*([^"]+)"/i);
+  // Match all <a> tags that link to an achievement
+  const aMatches = [...html.matchAll(/<a[^>]+href="[^"]*achievement=[^"]*"[^>]*>([\s\S]*?)<\/a>/gi)];
+  if (aMatches.length > 0) {
+    for (const m of aMatches) {
+      const innerHtml = m[1];
+      const srcMatch = innerHtml.match(/src="([^"]+)"/i);
+      const altMatch = innerHtml.match(/alt="Achievement:\s*([^"]+)"/i);
       if (srcMatch && altMatch) {
         const name = altMatch[1].trim();
+        const src = srcMatch[1];
         const key = name.toLowerCase();
-        unlockedMap.set(key, {
-          name,
-          src: srcMatch[1]
-        });
+
+        let tier = "Unlocked";
+        const tierMatch = innerHtml.match(/achievement-tier-label--([a-z0-9-]+)/i);
+        if (tierMatch) {
+          const rawTier = tierMatch[1].toLowerCase();
+          if (rawTier === "bronze") tier = "Bronze";
+          else if (rawTier === "silver") tier = "Silver";
+          else if (rawTier === "gold") tier = "Gold";
+          else if (rawTier === "platinum") tier = "Platinum";
+        }
+
+        unlockedMap.set(key, { name, src, tier });
+      }
+    }
+  } else {
+    // Fallback to direct image matching if profile structure changes
+    const imgMatches = [...html.matchAll(/<img[^>]+>/gi)];
+    for (const m of imgMatches) {
+      const tag = m[0];
+      if (tag.includes("githubassets.com/assets/")) {
+        const srcMatch = tag.match(/src="([^"]+)"/i);
+        const altMatch = tag.match(/alt="Achievement:\s*([^"]+)"/i);
+        if (srcMatch && altMatch) {
+          const name = altMatch[1].trim();
+          const key = name.toLowerCase();
+          unlockedMap.set(key, {
+            name,
+            src: srcMatch[1],
+            tier: "Unlocked"
+          });
+        }
       }
     }
   }
@@ -145,8 +174,8 @@ function determineTier(src, name) {
   return "Unlocked";
 }
 
-function calculateAchievementMetrics(key, src, name) {
-  const tier = determineTier(src, name);
+function calculateAchievementMetrics(key, src, name, scrapedTier) {
+  const tier = scrapedTier && scrapedTier !== "Unlocked" ? scrapedTier : determineTier(src, name);
   const descriptions = {
     "galaxy brain": "Answer accepted in GitHub Discussions",
     "pull shark": "Opened & merged pull requests",
@@ -251,7 +280,7 @@ async function main() {
   const items = [];
 
   for (const [key, badgeInfo] of unlockedMap.entries()) {
-    const metrics = calculateAchievementMetrics(key, badgeInfo.src, badgeInfo.name);
+    const metrics = calculateAchievementMetrics(key, badgeInfo.src, badgeInfo.name, badgeInfo.tier);
     const base64 = await fetchImageAsBase64(badgeInfo.src);
 
     items.push({
