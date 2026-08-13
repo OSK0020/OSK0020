@@ -8,6 +8,14 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "*.svg"
+      - "dist/**"
+      - "README.md"
+
+concurrency:
+  group: profile-card-update
+  cancel-in-progress: false
 
 jobs:
   generate:

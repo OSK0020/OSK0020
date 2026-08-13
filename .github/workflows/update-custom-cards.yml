@@ -7,6 +7,13 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "*.svg"
+      - "README.md"
+
+concurrency:
+  group: profile-card-update
+  cancel-in-progress: false
 
 jobs:
   update-custom-cards:
@@ -32,8 +39,9 @@ jobs:
           git add hero.svg about.svg stack.svg refresh-button.svg
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update OSK custom SVGs (Hero, About, Stack, Refresh Button)"
-            git pull --rebase origin main
-            git push origin main
+            for i in {1..5}; do
+              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
+            done
           else
             echo "No changes to commit"
           fi

@@ -7,6 +7,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "*.svg"
+      - "profile-3d-contrib/**"
+      - "dist/**"
+      - "README.md"
+
+concurrency:
+  group: profile-card-update
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -27,8 +36,9 @@ jobs:
           git add profile-3d-contrib
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update 3D Contribution Graph"
-            git pull --rebase origin main
-            git push origin main
+            for i in {1..5}; do
+              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
+            done
           else
             echo "No changes to commit"
           fi
