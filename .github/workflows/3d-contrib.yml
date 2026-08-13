@@ -2,12 +2,11 @@ name: GitHub 3D Contribution Graph
 
 on:
   schedule:
-    - cron: "0 1 * * *" # 04:00 Israel Time (01:00 UTC)
+    - cron: "4 1 * * *" # 04:04 Israel Time (01:04 UTC)
   workflow_dispatch:
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -28,9 +27,8 @@ jobs:
           git add profile-3d-contrib
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update 3D Contribution Graph"
-            for i in {1..5}; do
-              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
-            done
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi

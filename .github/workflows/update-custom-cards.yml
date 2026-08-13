@@ -2,12 +2,11 @@ name: Update OSK Custom Cards
 
 on:
   schedule:
-    - cron: "6 1 * * *" # 04:06 Israel Time (01:06 UTC - 2 min interval)
+    - cron: "0 1 * * *" # 04:00 Israel Time (01:00 UTC)
   workflow_dispatch:
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
+  push:
+    branches:
+      - main
 
 jobs:
   update-custom-cards:
@@ -33,9 +32,8 @@ jobs:
           git add hero.svg about.svg stack.svg refresh-button.svg
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update OSK custom SVGs (Hero, About, Stack, Refresh Button)"
-            for i in {1..5}; do
-              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
-            done
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi

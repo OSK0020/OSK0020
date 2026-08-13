@@ -2,13 +2,12 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    # Run once a day at 04:02 Israel Time (01:02 UTC - 2 min interval)
-    - cron: "2 1 * * *"
+    # Run once a day at 04:05 Israel Time (01:05 UTC)
+    - cron: "5 1 * * *"
   workflow_dispatch:
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
+  push:
+    branches:
+      - main
 
 jobs:
   generate:

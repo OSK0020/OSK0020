@@ -2,12 +2,11 @@ name: Update Achievements HUD Card
 
 on:
   schedule:
-    - cron: "4 1 * * *" # 04:04 Israel Time (01:04 UTC - 2 min interval)
+    - cron: "2 1 * * *" # 04:02 Israel Time (01:02 UTC)
   workflow_dispatch:
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
+  push:
+    branches:
+      - main
 
 jobs:
   update-achievements:
@@ -31,9 +30,8 @@ jobs:
           git add achievements.svg
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update achievements.svg HUD card"
-            for i in {1..5}; do
-              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
-            done
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi

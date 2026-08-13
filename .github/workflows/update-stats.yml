@@ -2,12 +2,11 @@ name: Update Local Stats Cards
 
 on:
   schedule:
-    - cron: "10 1 * * *" # 04:10 Israel Time (01:10 UTC - 2 min interval)
+    - cron: "1 1 * * *" # 04:01 Israel Time (01:01 UTC)
   workflow_dispatch:
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
+  push:
+    branches:
+      - main
 
 jobs:
   update-stats:
@@ -31,9 +30,8 @@ jobs:
           git add stats.svg streak-stats.svg
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update dynamic stats, streak and activity SVGs"
-            for i in {1..5}; do
-              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
-            done
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi

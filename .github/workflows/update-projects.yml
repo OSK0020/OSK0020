@@ -2,12 +2,11 @@ name: Update Public Projects
 
 on:
   schedule:
-    - cron: "8 1 * * *" # 04:08 Israel Time (01:08 UTC - 2 min interval)
+    - cron: "3 1 * * *" # 04:03 Israel Time (01:03 UTC)
   workflow_dispatch:
-
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
+  push:
+    branches:
+      - main
 
 jobs:
   update-projects:
@@ -33,9 +32,8 @@ jobs:
           git add projects.svg README.md
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update public projects SVG card and README"
-            for i in {1..5}; do
-              git pull --rebase origin main && git push origin main && break || sleep $((i * 3))
-            done
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi
