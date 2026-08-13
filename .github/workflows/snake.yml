@@ -5,13 +5,6 @@ on:
     # Run once a day at 04:02 Israel Time (01:02 UTC - 2 min interval)
     - cron: "2 1 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "*.svg"
-      - "dist/**"
-      - "README.md"
 
 concurrency:
   group: ${{ github.workflow }}

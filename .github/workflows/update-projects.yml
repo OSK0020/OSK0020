@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: "8 1 * * *" # 04:08 Israel Time (01:08 UTC - 2 min interval)
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "*.svg"
-      - "README.md"
 
 concurrency:
   group: ${{ github.workflow }}
