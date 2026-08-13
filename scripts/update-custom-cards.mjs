@@ -51,7 +51,19 @@ async function fetchLiveProfileData() {
         for (const r of repos) {
           if (r.fork) continue;
           calcStars += r.stargazers_count || 0;
-          if (r.language) {
+          if (r.languages_url) {
+            try {
+              const lRes = await fetch(r.languages_url, { headers });
+              if (lRes.ok) {
+                const bytes = await lRes.json();
+                for (const [l, b] of Object.entries(bytes)) {
+                  langBytes[l] = (langBytes[l] || 0) + b;
+                }
+              }
+            } catch (e) {
+              if (r.language) langBytes[r.language] = (langBytes[r.language] || 0) + 1000;
+            }
+          } else if (r.language) {
             langBytes[r.language] = (langBytes[r.language] || 0) + 1000;
           }
         }

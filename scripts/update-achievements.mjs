@@ -126,51 +126,43 @@ async function scrapeProfileAchievements() {
   return unlockedMap;
 }
 
-function calculateAchievementMetrics(key) {
-  switch (key) {
-    case "galaxy brain":
-      return {
-        desc: "Answer accepted in GitHub Discussions",
-        tier: "Platinum",
-        progressPct: 100
-      };
-    case "pull shark":
-      return {
-        desc: "Opened & merged pull requests",
-        tier: "Silver",
-        progressPct: 100
-      };
-    case "pair extraordinaire":
-      return {
-        desc: "Co-authored commits with collaborators",
-        tier: "Silver",
-        progressPct: 100
-      };
-    case "starstruck":
-      return {
-        desc: "Created repository with star milestones",
-        tier: "Bronze",
-        progressPct: 100
-      };
-    case "quickdraw":
-      return {
-        desc: "Closed issue or PR within 5 minutes",
-        tier: "Unlocked",
-        progressPct: 100
-      };
-    case "yolo":
-      return {
-        desc: "Merged PR directly without code review",
-        tier: "Unlocked",
-        progressPct: 100
-      };
-    default:
-      return {
-        desc: "Official GitHub Achievement",
-        tier: "Unlocked",
-        progressPct: 100
-      };
+function determineTier(src, name) {
+  const lowerSrc = (src || "").toLowerCase();
+  const lowerName = (name || "").toLowerCase();
+
+  if (lowerSrc.includes("platinum") || lowerSrc.includes("-x5") || lowerName.includes("x5")) {
+    return "Platinum";
   }
+  if (lowerSrc.includes("gold") || lowerSrc.includes("-x4") || lowerName.includes("x4")) {
+    return "Gold";
+  }
+  if (lowerSrc.includes("silver") || lowerSrc.includes("-x3") || lowerName.includes("x3")) {
+    return "Silver";
+  }
+  if (lowerSrc.includes("bronze") || lowerSrc.includes("-x2") || lowerName.includes("x2")) {
+    return "Bronze";
+  }
+  return "Unlocked";
+}
+
+function calculateAchievementMetrics(key, src, name) {
+  const tier = determineTier(src, name);
+  const descriptions = {
+    "galaxy brain": "Answer accepted in GitHub Discussions",
+    "pull shark": "Opened & merged pull requests",
+    "pair extraordinaire": "Co-authored commits with collaborators",
+    "starstruck": "Created repository with star milestones",
+    "quickdraw": "Closed issue or PR within 5 minutes",
+    "yolo": "Merged PR directly without code review",
+    "public sponsor": "Sponsored an open source developer",
+    "heart on your sleeve": "Reacted with a heart to an issue or PR"
+  };
+
+  return {
+    desc: descriptions[key] || "Official GitHub Achievement",
+    tier,
+    progressPct: 100
+  };
 }
 
 function generateSvgCard(items) {
@@ -259,7 +251,7 @@ async function main() {
   const items = [];
 
   for (const [key, badgeInfo] of unlockedMap.entries()) {
-    const metrics = calculateAchievementMetrics(key);
+    const metrics = calculateAchievementMetrics(key, badgeInfo.src, badgeInfo.name);
     const base64 = await fetchImageAsBase64(badgeInfo.src);
 
     items.push({

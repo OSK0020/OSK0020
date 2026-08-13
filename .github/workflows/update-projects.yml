@@ -2,7 +2,7 @@ name: Update Public Projects
 
 on:
   schedule:
-    - cron: "0 */5 * * *" # every 5 hours
+    - cron: "0 1 * * *" # Once a day at 04:00 Israel Time (01:00 UTC)
   workflow_dispatch:
   push:
     branches:

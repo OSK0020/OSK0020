@@ -44,7 +44,7 @@ function generateSvgCard(projects) {
     const lang = escapeXml(r.language || "TypeScript");
     const dotColor = idx % 2 === 0 ? "#3fb950" : "#58a6ff";
     const dialGrad = idx % 2 === 0 ? "dial-grad-1" : "dial-grad-2";
-    const percent = Math.min(98, 80 + (idx * 7) % 18);
+    const percent = r.langPercent || 85;
     const offset = (163.3 * (100 - percent) / 100).toFixed(1);
 
     return `  <a href="${r.html_url}" target="_blank">
@@ -126,16 +126,32 @@ async function main() {
     throw new Error(`GitHub API error: ${res.status} ${res.statusText}`);
   }
   const repos = await res.json();
+  const projects = [];
 
-  const projects = repos
-    .filter((r) => !r.fork && !r.archived && !r.private)
-    .filter((r) => r.name.toLowerCase() !== USERNAME.toLowerCase())
-    .sort((a, b) => b.stargazers_count - a.stargazers_count);
+  for (const r of repos) {
+    if (r.fork || r.archived || r.private || r.name.toLowerCase() === USERNAME.toLowerCase()) continue;
+    let langPercent = 85;
+    if (r.languages_url) {
+      try {
+        const lRes = await fetch(r.languages_url, { headers });
+        if (lRes.ok) {
+          const lData = await lRes.json();
+          const totalBytes = Object.values(lData).reduce((a, b) => a + b, 0);
+          if (totalBytes > 0 && r.language && lData[r.language]) {
+            langPercent = Math.round((lData[r.language] / totalBytes) * 100);
+          }
+        }
+      } catch (e) {}
+    }
+    projects.push({ ...r, langPercent });
+  }
 
   if (projects.length === 0) {
     console.log("No public repositories found.");
     return;
   }
+
+  projects.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
   const svgContent = generateSvgCard(projects);
   fs.writeFileSync(SVG_PATH, svgContent);
