@@ -4,7 +4,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_colors=12,7000ff,00f7ff&height=200&section=header&text=OSK0020%20%7C%7C%20STUDENT%20AND%20AI-POWERED%20BUILDER&fontSize=28&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%" alt="Header Banner" />
 
   <br/><br/>
-  <a href="https://github.com/OSK0020/OSK0020/actions/workflows/trigger-all.yml">
+  <a href="https://github.com/OSK0020/OSK0020/actions/workflows/update-profile.yml">
     <img src="./refresh-button.svg" alt="⚡ REFRESH ALL DATA // עדכון נתונים בלייב" />
   </a>
   <br/><br/>
